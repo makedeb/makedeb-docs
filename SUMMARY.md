@@ -2,6 +2,6 @@
 * [Installing](/intro/installing.md)
 
 ## makedeb
-* [Intro](/makedeb/installation.md)
+* [Intro](/makedeb/intro.md)
 * [Releases](/makedeb/releases.md)
 * [Installation](/makedeb/installation.md)
