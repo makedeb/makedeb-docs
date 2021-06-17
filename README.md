@@ -1,3 +1,2 @@
 # Initial page
-
-hi!
+Hello! Just testing things out.
