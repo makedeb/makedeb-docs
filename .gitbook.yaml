@@ -1,5 +1,5 @@
 root: ./
 
 structure:
-    readme: README.md
+    readme: /intro/installing.md
     summary: SUMMARY.md
