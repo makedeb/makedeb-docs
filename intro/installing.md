@@ -2,15 +2,7 @@ The makedeb package suite currently consists of three packages:
 
 - **makedeb:** Used to create Debian packages from PKGBUILDs.
 
-
-
-
-
 - **mpm:** Package manager for makedeb. Used to automate installing packages from the AUR and Arch Linux repositories on Debian systems.
-
-
-
-
 
 - **makedeb-db:** Dependency conversion tool for makedeb and mpm. Converts dependency names from Arch Linux to their Debian counterparts.
 
@@ -42,7 +34,7 @@ echo '[deb signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] h
 
 # Arch Linux
 {% hint style="info" %}
-These instructions are also applicable to distributions based on Arch, such as Manjaro, Chakra, and Artix.
+These instructions are also applicable to distributions based on Arch, such as Manjaro, Chakra Linux, and Artix Linux.
 {% endhint %}
 
 The makedeb package suite is distributed through the Arch User Repository.
