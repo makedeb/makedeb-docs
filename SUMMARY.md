@@ -1,3 +1,4 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [Introduction](intro/introduction.md)
+* [Installing](intro/installing.md)
