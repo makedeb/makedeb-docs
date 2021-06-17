@@ -5,4 +5,4 @@ Through the use of makedeb and its related tools, it's possible to install a var
 
 The makedeb suite also allows Debian package maintainers to use Arch's PKGBUILD format natively on Debian systems to build and package their programs.
 
-To get started, head to Installing.
+To get started, head to [Installing](/intro/installing.md).

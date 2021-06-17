@@ -37,6 +37,6 @@ echo '[deb signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] h
 These instructions are also applicable to distributions based on Arch, such as Manjaro, Chakra Linux, and Artix Linux.
 {% endhint %}
 
-The makedeb package suite is distributed through the Arch User Repository.
+On Arch Linux, the makedeb package suite is distributed through the Arch User Repository.
 
 Applicable links can be found in the relevant package's section in the table of contents.
