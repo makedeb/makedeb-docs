@@ -1,4 +1,3 @@
-# Installing
 Depending on the system your own, you'll follow different instructions.
 
 # Debian
