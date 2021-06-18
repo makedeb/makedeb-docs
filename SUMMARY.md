@@ -11,7 +11,7 @@
 * [Releases](/mpm/releases.md)
 * [Installation](/mpm/installation.md)
 
-## mpm
+## makedeb-db
 * [Intro](/makedeb-db/intro.md)
 * [Releases](/makedeb-db/releases.md)
 * [Installation](/makedeb-db/installation.md)
