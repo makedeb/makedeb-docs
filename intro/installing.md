@@ -21,7 +21,7 @@ The repository also holds packages that the makedeb suite needs to function, suc
 First, add the signing key:
 
 ```sh
-wget -O - 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
+wget -qO - 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
 ```
 
 Next, add the repository information to your system:
