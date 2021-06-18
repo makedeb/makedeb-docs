@@ -4,4 +4,4 @@ Key to makedeb's function is makepkg, the program used in Arch Linux's build sys
 
 Besides the things you'd probably expect *makepkg* to do, makedeb takes care of converting the resulting binary into a format that fits the Debian packaging guidelines, including architecture name conversion, and, if makedeb-db is installed, conversion of dependency names.
 
-makedeb also features build dependency management on the Debian releases.
+On the Debian releases, makedeb also features build dependency management with APT.
