@@ -7,5 +7,5 @@ Besides the things you'd probably expect *makepkg* to do, makedeb takes care of 
 On the Debian releases, makedeb also features build dependency management with APT.
 
 {% hint style="info" %}
-Users who wish to use the dependency conversion features of makedeb should install [makedeb-db](/makedeb-db/installing.md)
+Users who wish to use the dependency conversion features of makedeb should install [makedeb-db](/makedeb-db/installation.md).
 {% endhint %}
