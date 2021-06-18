@@ -17,20 +17,26 @@ On Debian systems, all packages are distributed through a central repository.
 
 The repository also holds packages that the makedeb suite needs to function, such as [makepkg](https://wiki.archlinux.org/title/makepkg).
 
-Setting up the repository is a simple two-command procedure.
-
 ## Repository Configuration
-First, add the repository signing key:
+First, add the signing key:
 
 ```sh
 wget -O - 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
 ```
 
-Next add the repository information:
+Next, add the repository information:
 
 ```sh
-echo '[deb signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.hunterwittenborn.com/ makedeb main' | sudo tee /etc/apt/sources.list.d/makedeb.list
+echo 'deb [signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.hunterwittenborn.com/ makedeb main' | sudo tee /etc/apt/sources.list.d/makedeb.list
 ```
+
+Lastly, update the repository information on your system:
+
+```sh
+sudo apt update
+```
+
+Visit each package's installation section for information on installing.
 
 # Arch Linux
 {% hint style="info" %}
