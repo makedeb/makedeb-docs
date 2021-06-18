@@ -10,3 +10,8 @@
 * [Intro](/mpm/intro.md)
 * [Releases](/mpm/releases.md)
 * [Installation](/mpm/installation.md)
+
+## mpm
+* [Intro](/makedeb-db/intro.md)
+* [Releases](/makedeb-db/releases.md)
+* [Installation](/makedeb-db/installation.md)
