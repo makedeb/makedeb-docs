@@ -1,6 +1,6 @@
 makedeb-db is a tool for converting Dependency names from Arch Linux to their Debian counterparts.
 
-makedeb-db is what allows makedeb and mpm's dependency magic to work.
+makedeb-db is what allows [makedeb](/makedeb/intro.md) and [mpm](/mpm/intro.md)'s dependency magic to work.
 
 In makedeb, it serves to convert dependency names, as well as automatically add and remove dependencies for Arch Linux and AUR packages.
 

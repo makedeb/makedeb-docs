@@ -15,7 +15,7 @@ These instructions are also applicable to distributions based on Debian, such as
 
 On Debian systems, all packages are distributed through a central repository.
 
-The repository also holds packages that the makedeb suite needs to function, such as makepkg.
+The repository also holds packages that the makedeb suite needs to function, such as [makepkg](https://wiki.archlinux.org/title/makepkg).
 
 Setting up the repository is a simple two-command procedure.
 
@@ -26,7 +26,7 @@ First, add the repository signing key:
 wget -O - 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
 ```
 
-Next add the repository information itself:
+Next add the repository information:
 
 ```sh
 echo '[deb signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.hunterwittenborn.com/ makedeb main' | sudo tee /etc/apt/sources.list.d/makedeb.list
@@ -37,6 +37,6 @@ echo '[deb signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] h
 These instructions are also applicable to distributions based on Arch, such as Manjaro, Chakra Linux, and Artix Linux.
 {% endhint %}
 
-On Arch Linux, the makedeb package suite is distributed through the Arch User Repository.
+On Arch Linux, the makedeb package suite is distributed through the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository).
 
 Applicable links can be found in the relevant package's section in the table of contents.

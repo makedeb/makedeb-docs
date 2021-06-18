@@ -1,5 +1,5 @@
 {% hint style="info" %}
-mpm only works on Debian systems. Users looking for an AUR package manager on Arch Linux should look for a different program, such as pamac, yay, or paru.
+mpm only works on Debian systems. Users looking for an AUR package manager on Arch Linux should look for a different program, such as [pamac](https://wiki.manjaro.org/index.php/Pamac), [yay](https://github.com/Jguer/yay), or [paru](https://github.com/Morganamilo/paru).
 {% endhint %}
 
 To install mpm from the stable release, install the `mpm` package:
