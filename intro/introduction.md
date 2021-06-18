@@ -1,5 +1,5 @@
 # Introduction
-makedebs is a package suite for creating Debian archives from PKGBUILDs.
+makedeb is a package suite for creating Debian archives from PKGBUILDs.
 
 Through the use of makedeb and its related tools, it's possible to install a variety of packages native to Arch Linux directly on Debian-based systems.
 
