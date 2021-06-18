@@ -8,3 +8,4 @@ On the Debian releases, makedeb also features build dependency management with A
 
 {% hint style="info" %}
 Users who wish to use the dependency conversion features of makedeb should install [makedeb-db](/makedeb-db/installing.md)
+{% endhint %}
