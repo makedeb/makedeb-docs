@@ -1,4 +1,4 @@
-The [Debian User Repository](https://dur.hunterwittenborn.com) (DUR) is a user-maintained repository of build files (PKGBUILDs) that can be built with (makedeb)[/makedeb/intro.md] and then installed with APT.
+The [Debian User Repository](https://dur.hunterwittenborn.com) (DUR) is a user-maintained repository of build files (PKGBUILDs) that can be built with [makedeb](/makedeb/intro.md) and then installed with APT.
 
 The DUR takes its roots in the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository), from which most of its features are derived.
 
