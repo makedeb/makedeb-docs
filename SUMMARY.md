@@ -15,3 +15,8 @@
 * [Intro](/makedeb-db/intro.md)
 * [Releases](/makedeb-db/releases.md)
 * [Installation](/makedeb-db/installation.md)
+
+## Debian User Repository
+* [Intro](/dur/intro.md)
+* [Using the DUR](/dur/using-the-dur.md)
+* [DUR User Guidelines](/dur/dur-user-guidelines.md)
