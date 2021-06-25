@@ -5,6 +5,7 @@
 * [Intro](/makedeb/intro.md)
 * [Releases](/makedeb/releases.md)
 * [Installation](/makedeb/installation.md)
+* [Known Limitations](/makedeb/known-limitations.md)
 
 ## mpm
 * [Intro](/mpm/intro.md)
