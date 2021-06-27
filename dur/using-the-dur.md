@@ -1,5 +1,5 @@
 {% hint style="warning" %}
-The DUR is currently only supported on the alpha release of makedeb.
+The DUR currently requires version `5.0.0` or newer of makedeb. Currently, this means you'll need to use either the [beta or alpha](/makedeb/releases.md) release.
 {% endhint %}
 
 To use the DUR, you must first have [makedeb](/makedeb/intro.md) installed on your system.
