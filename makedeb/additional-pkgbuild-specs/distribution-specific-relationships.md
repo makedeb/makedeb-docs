@@ -23,7 +23,7 @@ Setting distribution-specific package relationships inside of the `package()` fu
 {% endhint %}
 
 {% hint style="info" %}
-Setting distribution-specific package relationships overwrites **all** mentioned packages in the built program. This includes any relationships that are mentioned in `package()`
+Setting distribution-specific package relationships overwrites **all** mentioned packages in the built program. This includes any relationships that are mentioned in `package()`.
 {% endhint %}
 
 {% hint style="warning" %}
