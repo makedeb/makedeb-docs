@@ -1,4 +1,8 @@
-makedeb supports the use of distribution-specific package relationships. makedeb obtains this through the `lsb_release -cs` command.
+makedeb supports the use of distribution-specific package relationships, obtained through the `lsb_release -cs` command.
+
+{% hint style="info" %}
+To enable distribution-specific package functionality, pass the `-v` or `--distro-packages` option to makedeb.
+{% endhint %}
 
 Distribution-specific relationships are currently allowed on the following variables:
 
@@ -10,13 +14,17 @@ Distribution-specific relationships are currently allowed on the following varia
 - `provides`
 - `replaces`
 
-To set package-specific relationships, prefix the variable with `_release_`, where `release` is the codename for the distribution.
+To set package-specific relationships, prefix the variable with `release_`, where `release` is the codename for the distribution.
 
 For example, to change the dependencies to `foo` and `bar` when the host system is running Ubuntu 20.10 Groovy Gorilla, enter the following into the PKGBUILD:
 
 ```sh
-_groovy_depends=('foo' 'bar')
+groovy_depends=('foo' 'bar')
 ```
+
+{% hint style="info" %}
+It is possible to enable distro-specific functionality only on specific variables. If you leave any variables out, makedeb will fallback to the normal ones.
+{% endhint %}
 
 {% hint style="info" %}
 Setting distribution-specific package relationships inside of the `package()` function is currently not supported.
