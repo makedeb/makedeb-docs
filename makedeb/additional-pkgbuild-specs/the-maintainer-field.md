@@ -1,4 +1,4 @@
-- The `Maintainer` field inside the built package is taken from the Maintainer comment inside the PKGBUILD. For example, consider this build file:
+The `Maintainer` field inside the built package is taken from the Maintainer comment inside the PKGBUILD. For example, consider this build file:
 
 ```sh
 # Maintainer: Foo Bar <foobar@example.com>

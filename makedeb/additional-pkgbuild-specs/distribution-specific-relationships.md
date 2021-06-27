@@ -27,5 +27,5 @@ Setting distribution-specific package relationships overwrites **all** mentioned
 {% endhint %}
 
 {% hint style="warning" %}
-The Debian User Repository require all packages listed under normal relationship variables (i.e. `depends`, `optdepends`, `conflicts`) to be applicable to the latest Ubuntu LTS release. See [here](/dur/dur-user-guidelines/package-relationships.md) for more info.
+The Debian User Repository requires all packages listed under normal relationship variables (i.e. `depends`, `optdepends`, `conflicts`) to be applicable to the latest Ubuntu LTS release. See [here](/dur/dur-user-guidelines/package-relationships.md) for more info.
 {% endhint %}
