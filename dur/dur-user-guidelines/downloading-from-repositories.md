@@ -1,0 +1,1 @@
+When setting the sources in PKGBUILD (and when creating packages in general), **NEVER** pull from a package that isn't the latest version (exceptions for packages whose upstream releases stable versions).
