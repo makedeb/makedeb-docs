@@ -35,6 +35,6 @@ Installation instructions for individual packages can be found in their relevant
 These instructions are also applicable to distributions based on Arch, such as Manjaro, Chakra Linux, and Artix Linux.
 {% endhint %}
 
-On Arch Linux, the makedeb package suite is distributed through the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository).
+On Arch Linux, makedeb is distributed through the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository).
 
-Applicable links can be found in the relevant package's section in the table of contents.
+Applicable links can be found in makedeb's [installation](/makedeb/installation.md) section.
