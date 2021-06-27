@@ -5,10 +5,10 @@
 * [Intro](/makedeb/intro.md)
 * [Releases](/makedeb/releases.md)
 * [Installation](/makedeb/installation.md)
-* [Additional PKGBUILD specifications](/makedeb/additional-pkgbuild-specs.md)
+* [Additional PKGBUILD Specificiations](/makedeb/additional-pkgbuild-specs.md)
     * [Package Versions](/makedeb/additional-pkgbuild-specs/package_versions.md)
-    * [The Maintainer field](/makedeb/additional-pkgbuild-specs/the-maintainer-field.md)
-    * [Distribution-specific relationships](/makedeb/additional-pkgbuild-specs/distribution-specific-relationships.md)
+    * [The Maintainer Field](/makedeb/additional-pkgbuild-specs/the-maintainer-field.md)
+    * [Distribution-Specific Relationships](/makedeb/additional-pkgbuild-specs/distribution-specific-relationships.md)
 * [Known Limitations](/makedeb/known-limitations.md)
 
 ## Debian User Repository
