@@ -17,5 +17,6 @@
 * [DUR User Guidelines](/dur/dur-user-guidelines.md)
     * [Installation Scripts](/dur/dur-user-guidelines/installation-scripts.md)
     * [Package Relationships](/dur/dur-user-guidelines/package-relationships.md)
+    * [Auto-Updating Packages](/dur/dur-user-guidelines/auto-updating-packages.md)
     * [Unbuildable Source Packages](/dur/dur-user-guidelines/unbuildable-source-packages.md)
     * [Downloading from Repositories](/dur/dur-user-guidelines/downloading-from-repositories.md)
