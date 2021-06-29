@@ -2,7 +2,7 @@ Depending on the system you're on, you'll need follow different instructions.
 
 # Debian
 {% hint style="info" %}
-These instructions are also applicable to distributions based on Debian, such as Ubuntu.
+These instructions are also applicable to distributions based on Debian, such as Ubuntu, Pop!_OS, Linux Mint, and the various [Ubuntu flavors](https://ubuntu.com/download/flavours).
 {% endhint %}
 
 On Debian systems, all packages are distributed through a central repository.
@@ -32,7 +32,7 @@ Installation instructions for makedeb itself can be found in the [installation](
 
 # Arch Linux
 {% hint style="info" %}
-These instructions are also applicable to distributions based on Arch, such as Manjaro, Chakra Linux, and Artix Linux.
+These instructions are also applicable to distributions based on Arch, such as Manjaro and Artix Linux.
 {% endhint %}
 
 On Arch Linux, no configuration is needed to install makedeb, and can be installed directly from the Arch User Repository.
