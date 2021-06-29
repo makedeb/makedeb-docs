@@ -1,5 +1,5 @@
 # Summary
-* [Installing](/intro/installing.md)
+* [Setup](/intro/setup.md)
 
 ## makedeb
 * [Intro](/makedeb/intro.md)

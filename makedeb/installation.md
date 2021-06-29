@@ -1,6 +1,10 @@
 makedeb is available on both Debian and Arch systems.
 
 # Debian
+{% hint style="info" %}
+To install makedeb on Debian-based systems, you must first [have the repository set up](/intro/setup.md).
+{% endhint %}
+
 The stable release is downloadable from the `makedeb` package:
 ```sh
 sudo apt install makedeb
