@@ -4,7 +4,7 @@ The DUR currently requires version `5.0.0` or newer of makedeb. Currently, this 
 
 To use the DUR, you must first have [makedeb](/makedeb/intro.md) installed on your system.
 
-The DUR is also designed first and foremost for Debian systems, and there is thus no gurantee on usability for Arch-based distributions.
+The DUR is also designed first and foremost for Debian systems, and there is thus no guarantee on usability for Arch-based distributions.
 
 To begin using the DUR, head over to the [DUR homepage](https://dur.hunterwittenborn.com), and create an account.
 
