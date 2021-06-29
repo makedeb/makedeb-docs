@@ -28,7 +28,7 @@ Lastly, update the repository cache on your system:
 sudo apt update
 ```
 
-Installation instructions for makedeb itself can be found in the [installation](/makedeb/installation.md) section.
+Installation instructions for makedeb itself can be found in the [installation](/makedeb/installation.md#debian) section.
 
 # Arch Linux
 {% hint style="info" %}
@@ -37,4 +37,4 @@ These instructions are also applicable to distributions based on Arch, such as M
 
 On Arch Linux, no configuration is needed to install makedeb, and can be installed directly from the Arch User Repository.
 
-Applicable links can be found in makedeb's [installation](/makedeb/installation.md) section.
+Applicable links can be found in makedeb's [installation](/makedeb/installation.md#arch-linux) section.
