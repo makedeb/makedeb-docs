@@ -7,7 +7,7 @@ Maintainers and Co-Maintainers should both be listed as maintainers, with previo
 With that, regard the following format when entering maintainers and contributors into a PKGBUILD:
 
 ```sh
-# Maintainer John Doe <johndoe@example.com>
+# Maintainer: John Doe <johndoe@example.com>
 # Maintainer: Jane Doe <janedoe at example dot com>
 # Contributor: Foo Bar <foobar@example.com>
 ```
