@@ -1,1 +1,3 @@
-**NEVER** include install scripts that would add repositories to the user's system. A well-known example of this is Google Chrome, which, by default, adds a repository to keep itself up to date. This is, of course, not desired when using the DUR, as all updates should be handled by the DUR itself.  
+You **MUST NOT** include install scripts that would add repositories to the user's system.
+
+A well-known example of this is Google Chrome, which, by default, adds a repository to keep itself up to date. This is, of course, not desired when using the DUR, as all updates should be handled by the DUR itself.
