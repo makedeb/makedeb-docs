@@ -1,4 +1,4 @@
-makedeb supports the use of distribution-specific package relationships, obtained through the `lsb_release -cs` command.
+makedeb supports the use of distribution-specific package relationships, using the distribution codename obtained through the `lsb_release -cs` command.
 
 {% hint style="info" %}
 To enable distribution-specific package functionality, pass the `-v` or `--distro-packages` option to makedeb.
