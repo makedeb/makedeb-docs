@@ -1,4 +1,4 @@
-Current and past maintainers of packages on the DUR **MUST** have a commented line at the top of the PKGBUILD with their name/username followed by their email address.
+Current and past maintainers of packages on the MUR **MUST** have a commented line at the top of the PKGBUILD with their name/username followed by their email address.
 
 The email address may appear normally or disguised, at the discretion of the user.
 
