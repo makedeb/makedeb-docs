@@ -6,9 +6,10 @@
 * [Releases](/makedeb/releases.md)
 * [Installation](/makedeb/installation.md)
 * [Additional PKGBUILD Specifications](/makedeb/additional-pkgbuild-specs.md)
-    * [Package Versions](/makedeb/additional-pkgbuild-specs/package_versions.md)
     * [The Maintainer Field](/makedeb/additional-pkgbuild-specs/the-maintainer-field.md)
     * [Distribution-Specific Relationships](/makedeb/additional-pkgbuild-specs/distribution-specific-relationships.md)
+    * [Custom Control Fields](/makedeb/additional-pkgbuild-specs/custom-control-fields.md)
+    * [Package Versions](/makedeb/additional-pkgbuild-specs/package_versions.md)
 
 ## makedeb Package Repository
 * [Intro](/mpr/intro.md)
