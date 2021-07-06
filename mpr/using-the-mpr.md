@@ -1,7 +1,3 @@
-{% hint style="warning" %}
-The MPR currently requires version `5.0.0` or newer of makedeb. Currently, this means you'll need to use either the [beta or alpha](/makedeb/releases.md) release.
-{% endhint %}
-
 To use the MPR, you must first have [makedeb](/makedeb/intro.md) installed on your system.
 
 The MPR is also designed first and foremost for Debian systems, and there is thus no guarantee on usability for Arch-based distributions.

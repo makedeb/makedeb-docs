@@ -12,4 +12,4 @@ Everything in the MPR is inside of a central repository, meaning you don't have 
 
 If you want to remove the MPR from your system, there's also no configuration files to remove. Just uninstall the offending packages, and you're done.
 
-The MUR also makes it easier for users to start sharing their own packages through the use of the PKGBUILD package format. Other Debian-based build utilities often require configuring multiple files, and require a more complex setup compared to PKGBUILDs, which, in most circumstances, only consists of a single file.
+The MPR also makes it easier for users to start sharing their own packages through the use of the PKGBUILD package format. Other Debian-based build utilities often require configuring multiple files, and require a more complex setup compared to PKGBUILDs, which, in most circumstances, only consists of a single file.
