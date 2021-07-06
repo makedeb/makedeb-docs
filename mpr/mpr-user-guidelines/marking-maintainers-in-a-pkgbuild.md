@@ -1,4 +1,8 @@
-Current and past maintainers of packages on the MUR **MUST** have a commented line at the top of the PKGBUILD with their name/username followed by their email address.
+Current and past maintainers of packages on the MPR **MUST** have a commented line at the top of the PKGBUILD with their name/username followed by their email address.
+
+{% hint style="info" %}
+An exception to this rule exists for bot accounts, which may be omitted at the discretion of the primary maintainer of a package.
+{% endhint %}
 
 The email address may appear normally or disguised, at the discretion of the user.
 
