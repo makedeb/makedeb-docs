@@ -10,6 +10,8 @@
     * [Distribution-Specific Relationships](/makedeb/additional-pkgbuild-specs/distribution-specific-relationships.md)
     * [Custom Control Fields](/makedeb/additional-pkgbuild-specs/custom-control-fields.md)
     * [Package Versions](/makedeb/additional-pkgbuild-specs/package_versions.md)
+* [Optimizing PKGBUILDs](/makedeb/optimizing-pkgbuilds.md)
+	* [Reducing Redundancy](/makedeb/optimizing-pkgbuilds/reducing-redundancy.md)
 
 ## makedeb Package Repository
 * [Intro](/mpr/intro.md)
