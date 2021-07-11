@@ -12,16 +12,16 @@ This could be rewritten like so, making everything cleaner and easier to manage:
 
 ```sh
 depends=('package1' 'package2' 'package3')
-buster_depends=(${depends} 'package4')
-groovy_depends=(${depends} 'package5')
+buster_depends=(${depends[@]} 'package4')
+groovy_depends=(${depends[@]} 'package5')
 ```
 ---
 
 Note that the variables you mention must already be defined. So, attempting something like this **would not** work:
 
 ```sh
-buster_depends=(${depends} 'package4')
-groovy_depends=(${depends} 'package5')
+buster_depends=(${depends[@]} 'package4')
+groovy_depends=(${depends[@]} 'package5')
 depends=('package1' 'package2' 'package3')
 ```
 

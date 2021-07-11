@@ -1,3 +1,7 @@
+{% hint style="info" %}
+The leading functionality is only available on the Debian releases of makedeb.
+{% endhint %}
+
 makedeb supports the use of distribution-specific package relationships, using the distribution codename obtained through the `lsb_release -cs` command.
 
 {% hint style="info" %}
