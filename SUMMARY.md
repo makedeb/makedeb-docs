@@ -22,3 +22,4 @@
     * [Installation Scripts](/mpr/mpr-user-guidelines/installation-scripts.md)
     * [Package Relationships](/mpr/mpr-user-guidelines/package-relationships.md)
     * [Unbuildable Source Packages](/mpr/mpr-user-guidelines/unbuildable-source-packages.md)
+* [List of MPR Helpers](/mpr/list-of-mpr-helpers.md)
