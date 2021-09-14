@@ -1,0 +1,15 @@
+:root {
+  --md-primary-fg-color: #FF6E42;
+}
+
+.md-nav__link:focus {
+  color: #FF6E42;
+}
+
+.md-nav__link:hover, .md-typeset a:hover {
+  color: #E53500;
+}
+
+.md-header, .md-tabs, .md-nav__source {
+  background-color: #262626;
+}
