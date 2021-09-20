@@ -1,4 +1,4 @@
-Docker images are published nightly for all releases of makedeb.
+Docker images are published nightly for all releases of makedeb. The images come with minimal packages, containing only the bare necessities needed to run makedeb.
 
 ## Downloading images
 Images can be downloaded from the following:
