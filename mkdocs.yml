@@ -53,8 +53,11 @@ extra:
 nav:
   - Home:
     - Introduction: home/introduction.md
-    - Setup: home/setup.md
-    - Installing: home/installing.md
+    - Installing:
+      - Release types: home/installing/release-types.md
+      - APT repository: home/installing/apt-repository.md
+      - makedeb Package Repository: home/installing/makedeb-package-repository.md
+      - Arch User Repository: home/installing/arch-user-repository.md
 
   - makedeb:
     - Creating packages: makedeb/creating-packages.md
