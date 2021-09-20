@@ -58,6 +58,7 @@ nav:
       - APT repository: home/installing/apt-repository.md
       - makedeb Package Repository: home/installing/makedeb-package-repository.md
       - Arch User Repository: home/installing/arch-user-repository.md
+      - Docker: home/installing/docker.md
 
   - makedeb:
     - Creating packages: makedeb/creating-packages.md
