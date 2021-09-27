@@ -13,9 +13,6 @@
 The package name set inside of the built package.
 
 ## Package version
-This variable can be either a string or an array, with the latter being used to build multiple packages from a single PKGBUILD.
-
-Allowed characters are lowercase alphanumerics, plus signs (`+`), minus signs (`-`) and periods (`.`).
 
 ### pkgver `(required, nofunction, string)`
 The version number of a package.
@@ -51,7 +48,7 @@ This variable shouldn't be used in most packages, and should only be added when 
 ### pkgdesc `(mandatory, function, string)`
 The description of a package.
 
-This can be of any length, and should not be multiple lines. All characters are allowed except colons (`:`).
+This can be of any length, but should not be multiple lines. All characters are allowed except colons (`:`).
 
 ### arch `(mandatory, nofunction, array)`
 Sets what system architectures a package can be built on. Architectures in this list should be set to those found in the output of `uname -m`.
@@ -68,7 +65,7 @@ The URL of the software being packaged. When a website doesn't exist for the ups
 
 Sets the license(s) under which a program is distributed.
 
-This should be set to the name of a license under `/usr/share/common-licenses` or should otherwise be set to `custom`.
+This should be set to the name of a license under `/usr/share/common-licenses/` or should otherwise be set to `custom`.
 
 !!! note
     When using `custom`, you can also attach a license suffix like so:
@@ -77,7 +74,7 @@ This should be set to the name of a license under `/usr/share/common-licenses` o
     license=(`custom: name of license`)
     ```
 
-When using `custom`, it is also recommended to install the license under `/usr/share/doc/{pkgname}/copyright`, replacing `{pkgname}` with the name of your program set under the `pkgname` variable.
+When using `custom`, it is also recommended to install the license under `/usr/share/doc/{pkgname}/copyright/`, replacing `{pkgname}` with the name of your program set under the `pkgname` variable.
 
 ## Dependencies
 
@@ -97,7 +94,7 @@ depends=('foo>=1.0.0' 'foo<2.0.0')
 !!! tip
     You can append this variable with architectures (such as `x86_64`) to make this variable get overwritten on certain architectures. When using such, all architecture extensions should also be present under the `arch` variable.
 
-    You can also **prepend** this variable with a distribution id such as `focal` (i.e. `focal_depends` or `focal_depends_x86_64` if you really needed specificity) to overwrite the variable on certain **releases** of a distribution.
+    You can also **prepend** this variable with a distribution id such as `focal` (i.e. `focal_depends`, or `focal_depends_x86_64` if you really needed specificity) to overwrite the variable on certain **releases** of a distribution.
 
     Detection of the distribution name is done via the `lsb_release -cs` command, which is then used to check for the relevant variable.
 
@@ -127,7 +124,7 @@ Packages in this list won't be checked as build dependencies, regardless of wher
 
 This variable takes the same syntax as `depends` with a few additions:
 
-1. Packages listed here may optionally be prefixed with `r!` or `s!`. Adding the `r!` prefix will mark said dependency as recommended in the built package, while adding `s!` or simply omitting both will mark the package as suggested.
+1. Packages listed here may optionally be prefixed with `r!` or `s!`. Adding the `r!` prefix will mark said dependency as recommended in the built package, while adding `s!` or simply omitting any prefix will mark the package as suggested.
 
 2. Packages listed here can be prefixed with a description of what functionality the dependency adds like so:
 ```sh
@@ -147,15 +144,13 @@ Specifying comparison operators will cause the package to only conflict with pac
 ### provides `(optional, function, array)`
 A list of packages that the built package provides the dependency for.
 
-This variable takes the same syntax as `depends`.
-
-For example, if the PKGBUILD is building the `foo-new` program and another package needs `foo`, as a dependency, you could put the following in a PKGBUILD to make `foo-new` satisfy the dependency:
+For example, if the PKGBUILD is building the `foo-new` program and another package depends on `foo`, you could put the following in a PKGBUILD to make `foo-new` satisfy the dependency:
 
 ```sh
 provides=('foo')
 ```
 
-Specifying comparison operators here will cause the provided package to only be provided for when other packages request a version that fits the operator.
+Specifying comparison operators here will cause the provided package to only be provided for when other packages request a version that fits the specified operator. This variable also takes the same syntax as `depends`.
 
 ## Other
 
@@ -227,4 +222,8 @@ The following checksum types are supported, and should be entered in the format 
 - sha512
 - b2
 
-At minimum, one of these types **must** be present. If you otherwise would prefer to avoid any hash checks, simply choose any checksum type (`sha256sums` is historically used due to it being popular when actually using checksums) and set all of its values to `SKIP`.
+At minimum, one of these types **must** be present. If you otherwise would prefer to avoid any hash checks, simply choose any checksum type (`sha256sums` is historically used due to it being popular when actually using checksums) and set all of its values to `SKIP`:
+
+```sh
+sha256sums=('SKIP')
+```

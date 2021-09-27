@@ -19,8 +19,6 @@ makedeb will change the current directory to `${srcdir}` (which will be `./src/`
 ## check()
 This function should contain `make check` and/or other commands used to check if a program was built correctly and all needed dependencies are installed.
 
-Users who do not need or want to run this function can add `!check` to the `BUILDENV` array in `/etc/makepkg.conf`.
-
 ## package()
 This final step is used to actually put the files previously created into a directory where makedeb can package up your program properly.
 
