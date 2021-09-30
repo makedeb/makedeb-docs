@@ -9,7 +9,9 @@ Host {{env.mpr_url}}
 ```
 
 !!! warning
-    When uploading the SSH key to your profile on the MPR, make sure you **only** upload the file with the `.pub` extension. Uploading the key that doesn't end in `.pub` could potentially allow others to upload packages under your account if a security breach were to happen.
+    When uploading the SSH key to your profile on the MPR, make sure you **only** upload the file with the `.pub` extension.
+
+    On the contrary, `~/.ssh/name_of_ssh_key` in the above example should point to the file **without** the `.pub` extension.
 
 ## Verifying your connection
 You should now verify your connection to the MPR, which consists of first verifying the SSH fingerprints for the MPR (which can be found on the [MPR homepage](https://{{env.mpr_url}}) while logged out), and then verifying that you actually logged in fine.
