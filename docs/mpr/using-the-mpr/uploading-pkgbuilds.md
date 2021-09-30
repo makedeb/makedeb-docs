@@ -4,7 +4,7 @@ After such, add the public key to your account under the **My Account** section,
 
 ```
 Host {{env.mpr_url}}
-  Identity File ~/.ssh/name_of_ssh_key
+  IdentityFile ~/.ssh/name_of_ssh_key
   User mpr
 ```
 
