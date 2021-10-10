@@ -2,7 +2,7 @@ When listing relationships for any given package under normal variables (i.e. th
 
 An exception to this rule is when a new Ubuntu LTS release has recently been released ([in April of every even year](https://ubuntu.com/about/release-cycle)), at which point it is OK if the listed relationships are applicable to what was previously the latest Ubuntu LTS release.
 
-Users needing to set package relationships outside of those specific to the latest Ubuntu LTS release should look at makedeb's [distribution-specific relationship](/makedeb/additional-pkgbuild-specs/distribution-specific-relationships.md) functionality.
+Users needing to set package relationships outside of those specific to the latest Ubuntu LTS release should look at makedeb's [distribution-specific relationship](/makedeb/pkgbuild-specification/variables/#depends-optional-function-array) functionality.
 
 !!! note
     When a new Ubuntu LTS release has been made, it's a good idea to list distro-specific packages for both releases (when applicable) to aid users who might be on either release.
