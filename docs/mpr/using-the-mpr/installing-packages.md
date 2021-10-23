@@ -42,3 +42,8 @@ Next you need to actually create the flag by running `makedeb`. Some common argu
     If you otherwise chose to not pass the `-i`/`--install` argument, you can install the built package(s) from the `.deb` files contained in your current directory.
 
     If extras `.deb` files exist (such as is the case with `-bin` packages that download `.deb` packages as their source), the built package should be contained under the following name style: `{pkgname}_{pkgver}-{pkgrel}_{arch}.deb` (`arch` will most likely differ from what is contained in the PKGBUILD though - see `pkg/pkgname/DEBIAN/control` in the PKGBUILD's directory for the actual architecture).
+
+!!! info
+    If makedeb complains about errors during dependency installation when using the `-i` flag, check the output of APT for any missing dependencies and search the MPR for the missing packages. Then, follow the above steps, installing the packages additionally with the `--asdeps` passed to makedeb.
+    
+    In the case of MPR dependencies being present, it may also be wiser to look into using an [MPR helper](/mpr/list-of-mpr-helpers), which can, among other things, help automate the finding of MPR dependencies for you.
