@@ -69,6 +69,7 @@ nav:
   - MPR:
     - Introduction: mpr/introduction.md
     - Getting started: mpr/getting-started.md
+    - List of MPR helpers: mpr/list-of-mpr-helpers.md
     - Using the MPR:
       - Installing packages: mpr/using-the-mpr/installing-packages.md
       - Uploading PKGBUILDs: mpr/using-the-mpr/uploading-pkgbuilds.md
