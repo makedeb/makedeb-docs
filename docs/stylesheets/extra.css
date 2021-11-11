@@ -1,15 +1,40 @@
 :root {
-  --md-primary-fg-color: #FF6E42;
+	--md-primary-fg-color: #FF6E42;
 }
 
 .md-nav__link:focus {
-  color: #FF6E42;
+	color: #FF6E42;
 }
 
 .md-nav__link:hover, .md-typeset a:hover {
-  color: #E53500;
+	color: #E53500;
 }
 
 .md-header, .md-tabs, .md-nav__source {
-  background-color: #262626;
+	background-color: #262626;
+}
+
+.makedeb-devs {
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+}
+
+.makedeb-dev-picture {
+	float: left;
+	margin-right: 5em;
+	margin-top: 1em;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	border-width: 0.15em;
+	border-color: #bdbdbd;
+	border-style: solid;
+}
+
+.makedeb-profile-section {
+	padding-bottom: 0em;
+}
+
+.makedeb-dev-field {
+	margin: 0;
 }

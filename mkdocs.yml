@@ -17,19 +17,20 @@ plugins:
 markdown_extensions:
   - abbr
   - admonition
+  - attr_list
   - def_list
   - footnotes
   - pymdownx.highlight
   - pymdownx.tabbed
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
       options:
         custom_icons:
           - extras/.icons
-
 # Copyright.
 copyright: Copyright &copy; 2021 Hunter Wittenborn. See the source for copying conditions.
 
@@ -82,7 +83,7 @@ nav:
   - Support:
     - Getting support: support/getting-support.md
     - Reporting issues: support/reporting-issues.md
-
+    - makedeb Team: support/makedeb-team.md
 # Theme info.
 theme:
   name: material
