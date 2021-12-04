@@ -23,6 +23,8 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.tabbed
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.inlinehilite
   - md_in_html
   - pymdownx.emoji:
@@ -31,6 +33,7 @@ markdown_extensions:
       options:
         custom_icons:
           - extras/.icons
+
 # Copyright.
 copyright: Copyright &copy; 2021 Hunter Wittenborn. See the source for copying conditions.
 
@@ -41,12 +44,11 @@ extra:
     mpr_url: "mpr.hunterwittenborn.com"
     aur_url: "aur.archlinux.org"
     github_url: "github.com"
-    site_url: "docs.hunterwittenborn.com"
+    site_url: "makedeb.hunterwittenborn.com"
 
   social:
     - icon: fontawesome/brands/github
       link: "https://github.com/makedeb/"
-
     - icon: matrix
       link: "https://matrix.to/#/#makedeb:hunterwittenborn.com"
 
@@ -84,6 +86,7 @@ nav:
     - Getting support: support/getting-support.md
     - Reporting issues: support/reporting-issues.md
     - makedeb Team: support/makedeb-team.md
+
 # Theme info.
 theme:
   name: material
@@ -108,3 +111,5 @@ theme:
       toggle:
         icon: material/lightbulb-outline
         name: Switch to light mode
+
+# vim:set sw=2 noet:
