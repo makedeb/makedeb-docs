@@ -1,4 +1,4 @@
-makedeb creates packages via the PKGBUILD [^1] package format.
+makedeb creates packages via the PKGBUILD package format.
 
 PKGBUILDs are just Bash scripts that define variables and functions that tell makedeb how to build a package.
 
@@ -28,6 +28,5 @@ You could then run `makedeb -si`, which would do the following:
 - Build the package.
 - Install the package.
 
-To get a more in-depth look on how to create a PKGBUILD, look at the full PKGBUILD specification [^1].
-
-[^1]: See [pkgbuild-specification/variables](/makedeb/pkgbuild-specification/variables) and [pkgbuild-specification/functions](/makedeb/pkgbuild-specification/functions).
+!!! info
+    To see the full specification for the PKGBUILD file format, see the `PKGBUILD(5)` man page.

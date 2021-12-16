@@ -65,9 +65,6 @@ nav:
 
   - makedeb:
     - Creating packages: makedeb/creating-packages.md
-    - PKGBUILD specification:
-      - Variables: makedeb/pkgbuild-specification/variables.md
-      - Functions: makedeb/pkgbuild-specification/functions.md
 
   - MPR:
     - Introduction: mpr/introduction.md
