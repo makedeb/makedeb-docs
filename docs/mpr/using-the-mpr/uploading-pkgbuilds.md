@@ -22,7 +22,7 @@ To test everything, you can run the following:
 ssh "mpr@{{env.mpr_url}}"
 ```
 
-On a succesful connection, you should get a message similar to such:
+On a successful connection, you should get a message similar to such:
 
 ```
 PTY allocation request failed on channel 0
