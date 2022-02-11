@@ -27,8 +27,8 @@ On a succesful connection, you should get a message similar to such:
 ```
 PTY allocation request failed on channel 0
 Interactive shell is disabled.
-Try `ssh mpr@mpr.hunterwittenborn.com help` for a list of commands.
-Connection to mpr.hunterwittenborn.com closed.
+Try `ssh mpr@{{env.mpr_url}} help` for a list of commands.
+Connection to {{env.mpr_url}} closed.
 ```
 
 ## Uploading your package

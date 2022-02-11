@@ -41,7 +41,7 @@ copyright: Copyright &copy; 2021 Hunter Wittenborn. See the source for copying c
 extra:
   env:
     proget_url: "proget.hunterwittenborn.com"
-    mpr_url: "mpr.hunterwittenborn.com"
+    mpr_url: "mpr.makedeb.org"
     aur_url: "aur.archlinux.org"
     github_url: "github.com"
     site_url: "makedeb.hunterwittenborn.com"
