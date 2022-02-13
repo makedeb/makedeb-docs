@@ -1,4 +1,4 @@
-The primary method for installing of makedeb on Debian-based systems is through the use of makedeb's APT repository.
+The primary method for installation of makedeb on Debian-based systems is through the use of makedeb's APT repository.
 
 Besides distributing makedeb itself, the repository also holds dependencies that makedeb needs to function properly.
 
