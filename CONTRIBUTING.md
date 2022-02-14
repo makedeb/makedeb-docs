@@ -2,7 +2,7 @@
 To test changes to the documentation, you'll need to first install the needed dependencies onto your system.
 
 ## Installing needed dependencies
-You'll need Python 3 and pip to succesfully run the remaining of the setup instructions.
+You'll need Python 3 and pip to successfully run the remaining of the setup instructions.
 
 **NOTE:**   
 Make sure you've already forked and cloned the repository to your local system.
