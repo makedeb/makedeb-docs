@@ -1,8 +1,8 @@
 The [makedeb Package Repository](https://{{env.mpr_url}}) (abbreviated MPR) is a user-maintained repository of build files (PKGBUILDs) that can be built with [makedeb](/home/introduction) and then installed with APT.
 
-The MPR takes its roots in the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository), from which most of its features are derived.
+The MPR takes its roots in the [Arch User Repository](https://wiki.archlinux.org/title/Arch_User_Repository), from which the code of the platform was originally conceived.
 
-The MPR was designed to aid users who use makedeb on Debian-based systems to more easily find and build their favorite packages that might not be in their distribution's repositories.
+The MPR was designed to aid users who use makedeb to more easily find and build their favorite packages that might not be in their distribution's repositories.
 
 The MPR was also made to solve a lingering problem with alternatives such as PPAs: centralization.
 

@@ -32,9 +32,6 @@ You **MUST** also append the image name with any of the following tags:
 - `ubuntu-rolling` (built from `ubuntu:rolling`)
 - `ubuntu-latest` (built from `ubuntu:latest`)
 
-### Arch Linux
-- `archlinux-latest` (built from `archlinux:latest`)
-
 For example, to pull the beta image with the `ubuntu-bionic` tag, pull the following:
 
 ```

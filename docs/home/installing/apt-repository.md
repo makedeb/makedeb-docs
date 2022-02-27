@@ -1,9 +1,7 @@
-The primary method for installation of makedeb on Debian-based systems is through the use of makedeb's APT repository.
-
-Besides distributing makedeb itself, the repository also holds dependencies that makedeb needs to function properly.
+The primary method for installation of makedeb is through the use of makedeb's APT repository.
 
 !!! note
-    These instructions are also applicable to distributions based on Debian, such as Ubuntu, Pop!_OS, Linux Mint, and the various [Ubuntu flavors](https://ubuntu.com/download/flavours).
+    These instructions are also applicable to distributions based on Debian and Ubuntu, such as Pop!_OS, Linux Mint, and the various [Ubuntu flavors](https://ubuntu.com/download/flavours).
 
 ## Repository Configuration
 First, add the signing key:
