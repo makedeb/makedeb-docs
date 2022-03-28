@@ -1,0 +1,74 @@
+// Our CSS.
+@import "syntax-highlighting";
+@import "header";
+@import "footer";
+@import "404";
+@import "post";
+@import "notice";
+@import "toggle-menu";
+
+// External CSS.
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+
+// Fonts.
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Main CSS, shared across entire website.
+body {
+	font-family: "Ubuntu", sans-serif;
+}
+
+a, a:visited {
+	color: $orange;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: lighten($orange, 8%);
+}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+li::before {
+	content: "- ";
+}
+
+// Styling for code blocks.
+code {
+	background-color: lighten($light-grey, 5%);
+	padding: 0.2em;
+	font-size: 85%;
+	border-radius: 0.3em;
+	font-family: "Ubuntu Mono", monospace;
+}
+
+pre {
+	margin: 0.5em 0;
+	padding: 0.3em 0.5em;
+	background-color: lighten($light-grey, 5%);
+	overflow: auto;
+
+	code {
+		line-height: 1.6em;
+		font-size: 100%;
+	}
+}
+
+// Ensures the footer is (at minimum) at the bottom of the viewport.
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+footer {
+	margin-top: auto;
+}

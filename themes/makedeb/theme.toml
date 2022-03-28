@@ -1,0 +1,12 @@
+name = "makedeb"
+license = "GPL3"
+licenselink = "https://github.com/makedeb/makedeb.org/blob/main/LICENSE"
+description = "Hugo theme for makedeb.org"
+homepage = "https://www.makedeb.org/"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "makedeb Development Team"
+  homepage = "https://www.makedeb.org/"

@@ -1,0 +1,8 @@
+<div class="docs-index">
+	{{ range .Site.Sections }}
+		<h2>{{ .Title }}</h2>
+		{{ range .Pages }}
+			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		{{ end }}
+	{{ end }}
+</div>

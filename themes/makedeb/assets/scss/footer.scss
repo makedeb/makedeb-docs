@@ -1,0 +1,75 @@
+@import "variables";
+
+$footer-max-width: 1230px;
+
+footer {
+	height: 100%;
+	padding: 0.8em 0;
+	font-size: 1.1em;
+	background-color: $dark-grey;
+	display: flex;
+	justify-content: space-between;
+
+	@media (max-width: $footer-max-width) {
+		flex-direction: column;
+	}
+
+	p {
+		color: $light-grey;
+		width: fit-content;
+		line-height: 1.2em;
+		text-align: center;
+	}
+
+	.copyright, .generation-info, .links {
+		align-self: center;
+	}
+
+	@media (max-width: $footer-max-width) {
+		.copyright, .generation-info, .links {
+			padding: 0 0.5em;
+		}
+
+		.generation-info, .links {
+			padding-top: 0.5em;
+		}
+	}
+	
+	.copyright {
+		@media (min-width: $footer-max-width) {
+			margin-left: 0.7em;
+		}
+	}
+
+	.generation-info {
+		a {
+			color: $light-orange;
+			transition: color 0.2s;
+		}
+
+		a:hover {
+			color: $orange;
+		}
+		
+		@media (max-width: $footer-max-width) {
+			display: none;
+		}
+	}
+
+	.links {
+		a {
+			color: $light-grey;
+			margin-right: 1em;
+			transition-property: color;
+			transition-duration: 0.2s;
+
+			@media (max-width: $footer-max-width) {
+				margin: 0 0.5em;
+			}
+		}
+
+		a:hover {
+			color: $light-orange;
+		}
+	}
+}
