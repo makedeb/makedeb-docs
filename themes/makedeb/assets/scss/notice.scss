@@ -4,9 +4,9 @@
 	border-left: 0.2em solid;
 	padding: 0.2em 0.4em;
 	margin-top: 1em;
-
-	* {
-		padding: 0 !important;
+	
+	& *:first-child {
+		padding-top: 0 !important;
 	}
 
 	&.note {

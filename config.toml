@@ -4,6 +4,9 @@ title = "makedeb Docs"
 theme = "makedeb"
 pluralizelisttitles = "false"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
 site_desc = "A simplicity-focused packaging tool for Debian archives"
 hw_url = "hunterwittenborn.com"

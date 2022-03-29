@@ -1,3 +1,9 @@
 <div class="notice {{ .Get 0 }}">
-	<p>{{ .Inner | markdownify }}</p>
+	{{ $content := .Inner | markdownify }}
+
+	{{ if hasPrefix $content "<p>" }}
+		{{ $content }}
+	{{ else }}
+		<p>{{ $content }}</p>
+	{{ end }}
 </div>

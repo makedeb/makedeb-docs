@@ -37,13 +37,64 @@ strong {
 	font-weight: bold;
 }
 
-li::before {
-	content: "- ";
+ol, ul {
+	list-style: disc;
+}
+
+li {
+	margin-left: 1em;
+	display: list-item;
+	padding: 0.2em 0;
+}
+
+// Styling for tables.
+$table-padding: 0.4em;
+$table-border: 0.15em; // No clue why this makes it work right, but we'll go with it.
+
+table {
+	border-top: 0.15em solid $light-grey;
+	margin: 1em 0;
+	display: block;
+	max-width: fit-content;
+	overflow-x: scroll;
+
+	thead tr {
+		th {
+			font-weight: 700;
+			padding: $table-padding;
+			border-bottom: 0.2em solid darken($light-grey, 10%);
+			background-color: lighten($light-grey, 8%);
+			border-left: $table-border solid $light-grey;
+			border-right: $table-border solid $light-grey;
+		}
+	}
+
+	tbody tr {
+		&:first-child td {
+			border-bottom: $table-border solid $light-grey;
+		}
+		
+		&:last-child td {
+			border-top: $table-border solid $light-grey;
+		}
+
+		&:not(:first-child):not(:last-child) {
+			border-top: $table-border solid $light-grey;
+			border-bottom: $table-border solid $light-grey;
+		}
+
+		td {
+			line-height: 1.3em;
+		 	padding: $table-padding;
+			border-left: $table-border solid $light-grey;
+			border-right: $table-border solid $light-grey;
+			border-bottom: $table-border solid $light-grey;
+		}
+	}
 }
 
 // Styling for code blocks.
-code {
-	background-color: lighten($light-grey, 5%);
+code { background-color: lighten($light-grey, 5%);
 	padding: 0.2em;
 	font-size: 85%;
 	border-radius: 0.3em;
@@ -60,6 +111,36 @@ pre {
 		line-height: 1.6em;
 		font-size: 100%;
 	}
+}
+
+.code-block {
+        position: relative;
+ 
+        .clipboard-icon, .check-icon {
+                position: absolute;
+                color: darken($light-grey, 28%);
+		background-color: lighten($light-grey, 5%);
+                right: 0;
+                top: 0.3125em; // 5px divided by 16.
+		padding: 0 0.3125em;
+                transition-property: color;
+                transition-duration: 0.2s;
+                z-index: 2;
+        }
+    
+        .clipboard-icon {
+                color: darken($light-grey, 28%);
+
+                &:hover {
+                        color: $orange;
+                        cursor: pointer;
+                }
+        }
+
+        .check-icon {
+                display: none;
+                color: #40a85c;
+        }
 }
 
 // Ensures the footer is (at minimum) at the bottom of the viewport.

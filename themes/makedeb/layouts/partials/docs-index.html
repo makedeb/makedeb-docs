@@ -1,8 +1,14 @@
 <div class="docs-index">
+	<hr>
+	{{ $curpage := .Page.Title }}
 	{{ range .Site.Sections }}
 		<h2>{{ .Title }}</h2>
 		{{ range .Pages }}
-			<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			{{ if eq $curpage .Title }}
+				<p>{{ .Title }}</p>
+			{{ else }}
+				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+			{{ end }}
 		{{ end }}
 	{{ end }}
 </div>
