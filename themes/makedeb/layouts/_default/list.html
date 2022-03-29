@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		{{ $section := .CurrentSection.Title }}
+		{{ range .Site.Sections }}
+			{{ if not (eq $section .Title) }}
+				{{ continue }}
+			{{ else }}
+				{{ range .Pages }}
+					<meta http-equiv="refresh" content="0; url='{{ .RelPermalink }}'" />
+					{{ break }}
+				{{ end }}
+				{{ break }}
+			{{ end }}
+		{{ end }}
+	</head>
+</html>

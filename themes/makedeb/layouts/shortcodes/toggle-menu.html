@@ -1,0 +1,8 @@
+<div class="toggle-menu">
+	{{ $cur := 0 }}
+
+	{{ range .Params }}
+	<p class="{{ . }} toggle-menu-button {{ if eq $cur 0 }}active{{ end }}">{{ . }}</p>
+		{{ $cur = add $cur 1 }}
+	{{ end }}
+</div>

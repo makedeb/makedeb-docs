@@ -1,0 +1,13 @@
+<footer>
+	<div class="copyright">
+		<p>&copy; 2022 makedeb Developement Team</p>
+	</div>
+	<div class="generation-info">
+		<p>Last generated on {{ now | time.Format "Monday, Jan 2, 2006" }}. See <a href="https://{{ .Site.Params.github_url }}/makedeb/makedeb.org">the source</a> for copying conditions.</p>
+	</div>
+	<div class="links">
+		<a href="https://mpr.{{ .Site.Params.hw_url }}">MPR</a>
+		<a href="https://docs.{{ .Site.Params.makedeb_url }}">Docs</a>
+		<a href="https://github.com/makedeb">GitHub</a>
+	</div>
+</footer>

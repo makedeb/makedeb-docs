@@ -1,0 +1,3 @@
+<div class="{{ .Get "class" }}" {{ if (not (eq (.Get "show") 1)) }}style="display: none"{{ end }}>
+	{{ .Inner | markdownify }}
+</div>

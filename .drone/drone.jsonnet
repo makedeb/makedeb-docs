@@ -1,21 +1,29 @@
-local buildAndDeploy() = {
-  name: "build-and-deploy",
-  kind: "pipeline",
-  type: "docker",
-  volumes: [{name: "web_root", host: {path: "/var/www/docs.makedeb.org/"}}],
-  steps: [
-    {
-      name: "generate-docs",
-      image: "python",
-      volumes: [{name: "web_root", path: "/var/www/docs.makedeb.org/"}],
-      commands: [
-        "pip install -r requirements.txt",
-        "mkdocs build --strict --site-dir '/var/www/docs.makedeb.org/'"
-      ]
-    }
-  ]
+local buildAndPublish() = {
+    name: "build-and-publish",
+    kind: "pipeline",
+    type: "docker",
+    volumes: [{name: "deploy-dir", host: {path: "/var/www/docs.makedeb.org"}}],
+    trigger: {
+        branch: ["main"],
+        repo: ["makedeb/makedeb-docs"]
+    },
+    steps: [{
+        name: "build-and-publish",
+        image: "proget.hunterwittenborn.com/docker/makedeb/makedeb:ubuntu-focal",
+        volumes: [{name: "deploy-dir", path: "/var/www/docs.makedeb.org"}],
+        commands: [
+            "sudo apt-get update",
+            "sudo apt-get install git gcc g++ -y",
+            "sudo chown 'makedeb:makedeb' ./ -R",
+            "git clone \"https://$${mpr_url}/golang-go\"",
+            "git clone \"https://$${mpr_url}/hugo\"",
+            "cd golang-go/; makedeb -si --no-confirm; cd ../",
+            "cd hugo/; makedeb -di --no-confirm; cd ../",
+            "sudo hugo -d /var/www/docs.makedeb.org"
+        ]
+    }]
 };
 
-[
-  buildAndDeploy()
-]
+[buildAndPublish()]
+
+// vim: set syntax=javascript ts=4 sw=4 expandtab:

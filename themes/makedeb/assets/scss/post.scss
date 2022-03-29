@@ -1,0 +1,155 @@
+@import "variables";
+$split-width: 51.875em;
+
+.docs {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: start;
+
+	@media (max-width: $split-width) {
+		flex-direction: column-reverse;
+	}
+
+	.docs-index {
+		margin: 0.5em;
+		margin-top: 3em;
+		padding: 0.25em;
+
+		hr {
+			display: none;
+			color: $light-grey;
+
+			@media (max-width: $split-width) {
+				display: block;
+			}
+		}
+
+		@media (max-width: $split-width) {
+			align-self: center;
+			margin-top: 0;
+		}
+
+		*:not(hr) {
+			width: fit-content;
+			display: block;
+			font-size: 1.1em;
+			line-height: 1.3em;
+			white-space: nowrap;
+
+			@media (max-width: $split-width) {
+				text-align: center;
+				width: 100%;
+			}
+		}
+
+		h2 {
+			padding-top: 0.6em;
+			text-decoration: underline;
+		}
+
+		h2:hover, p:hover {
+			cursor: default;
+		}
+
+		a {
+			color: darken($light-grey, 25%);
+
+			&:hover {
+				color: $orange;
+			}
+		}
+
+	}
+	 
+	.post {
+		padding: 3em 5%;
+		color: $dark-grey;
+		max-width: 50em;
+		// So apparently flexbox items have a default value of 'min-size: auto', which is causing overflows when the document post is on a separate line from the index. Don't know why that causes overflow issues, but this fixes it.
+		// See https://moduscreate.com/blog/how-to-fix-overflow-issues-in-css-flex-layouts/.
+		min-width: 0;
+
+		@media (max-width: $split-width) {
+			padding-bottom: 0;
+		}
+	
+		.title {
+			font-size: 2.8em;
+		}
+
+		hr {
+			border: none;
+			background-color: $light-grey;
+			height: 0.1em;
+			margin: 0;
+		}
+
+		.content {
+			margin-left: auto;
+			margin-right: auto;
+
+			h2 {
+				font-size: 2em;
+				margin-top: 0.7em;
+			}
+
+			h3 {
+				font-size: 1.6em;
+				margin-top: 0.7em;
+			}
+
+			p:not(li p), li {
+				font-size: 1.2em;
+				line-height: 1.3em;
+			}
+
+			p {
+				padding-top: 1em;
+			}
+		
+			ul {
+				padding-top: 1em;
+			}
+
+			.heading {
+				.link-icon {
+					color: darken($light-grey, 20%);
+					transition-property: color;
+					visibility: hidden;
+				
+					svg {
+						height: 0.7em;
+						width: auto;
+					}
+				}
+
+				&:hover {
+					.link-icon {
+						visibility: visible;
+
+						&:hover {
+							color: $orange;
+						}
+					}
+				}
+			}
+		}
+	
+		.author {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			img {
+				height: 5em;
+				width: 5em;
+				border-radius: 50%;
+				margin: 1em 0;
+			}
+
+			.author-name {
+				font-size: 1.5em;
+			}
+		}
+	}
+}

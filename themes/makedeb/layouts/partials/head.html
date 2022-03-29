@@ -1,0 +1,18 @@
+<head>
+	<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+	<meta name="description" content="{{ .Site.Params.site_desc }}.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{ $style := resources.Get "scss/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+	<link rel="icon" type="image/x-icon" href="/media/makedeb-logo.png">
+	<link rel="stylesheet" href="{{ $style.Permalink }}">
+
+	<!-- Syntax highlighting in code blocks -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+
+	<!-- Toggle menus -->
+	<script src="/js/toggle-menu.js"></script>
+
+	<!-- Clipboard copy for code blocks -->
+	<script src="/js/codeblock-copy.js"></script>
+</head>

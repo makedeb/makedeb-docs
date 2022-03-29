@@ -1,0 +1,8 @@
+{{ $anchor := .Anchor | safeURL }}
+
+<div class="heading">
+	<h{{ .Level }}>
+		{{ .Text | safeHTML }}
+		<a class="link-icon" href="#{{ $anchor }}" id="{{ $anchor }}">{{ partial "media/link.svg" . }}</a>
+	</h{{ .Level }}>
+</div>
