@@ -23,7 +23,7 @@ sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
 Next, add the repository information to your system:
 
 ```sh
-echo 'deb [signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://{{env.proget_url}}/ makedeb main' | \
+echo 'deb [signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.{{< hw_url >}}/ makedeb main' | \
 sudo tee /etc/apt/sources.list.d/makedeb.list
 ```
 
