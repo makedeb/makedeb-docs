@@ -1,0 +1,48 @@
+@import "variables";
+
+$mobile-width: 28.75em;
+
+.makedeb-devs {
+	padding: 1em 0;
+
+	.dev {
+		display: flex;
+		min-width: 0;
+		padding: 1em;
+
+		@media (max-width: $mobile-width) {
+			flex-direction: column;
+		}
+
+		.img, .info {
+			align-self: center;
+		}
+
+		.img img {
+			width: 5em;
+			height: auto;
+			border: 0.2em solid darken($light-grey, 10%);
+			border-radius: 50em;
+			margin-right: 1em;
+
+			@media (max-width: $mobile-width) {
+				margin-bottom: 1em;
+			}
+		}
+
+		.info {
+			h3 {
+				padding-bottom: 0.3em;
+			}
+
+			h3, p {
+				padding-top: 0;
+				margin-top: 0;
+
+				@media (max-width: $mobile-width) {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
