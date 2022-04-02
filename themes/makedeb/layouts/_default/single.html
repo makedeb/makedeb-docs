@@ -4,6 +4,14 @@
 	<body>
         	{{- partial "header.html" . -}}
 		<div class="docs">
+			<script src="/js/mobile-menu.js"></script>
+
+			<div class="show-menu">
+				<a href="javascript:void(0)">
+					{{- partial "svg/unordered-list.svg" . -}}
+				</a>
+			</div>
+
 			{{- partial "docs-index.html" . -}}
 			<div class="post">
 				<h1 class="title">{{ .Title }}</h1><br>

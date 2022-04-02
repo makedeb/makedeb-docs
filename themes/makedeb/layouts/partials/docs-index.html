@@ -1,11 +1,14 @@
 <div class="docs-index">
-	<hr>
+	<a href="javscript:void(0)">
+		{{- partial "svg/arrow-left.svg" . -}}
+	</a>
+
 	{{ $curpage := .Page.Title }}
 	{{ range .Site.Sections }}
 		<h2>{{ .Title }}</h2>
 		{{ range .Pages }}
 			{{ if eq $curpage .Title }}
-				<p>{{ .Title }}</p>
+				<a class="colored-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
 			{{ else }}
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 			{{ end }}

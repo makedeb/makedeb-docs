@@ -5,28 +5,51 @@ $split-width: 51.875em;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: start;
+	position: relative;
 
 	@media (max-width: $split-width) {
-		flex-direction: column-reverse;
+		flex-direction: column;
+	}
+	
+	.show-menu {
+		display: none;
+		padding: 1em 5%;
+
+		& .unordered-list-icon {
+			width: 2em;
+			color: darken($light-grey, 25%);
+		}
+
+		@media (max-width: $split-width) {
+			display: block;
+		}
 	}
 
 	.docs-index {
-		margin: 0.5em;
 		margin-top: 3em;
-		padding: 0.25em;
+		padding: 0 0.75em;
+		z-index: 3;
 
-		hr {
+		@media (max-width: $split-width) {
+			background-color: darken(white, 2%);
+			margin-top: 0;
+			position: absolute;
+			left: -100vh;
+			transition-property: left;
+			transition-duration: 0.4s;
+			height: 100%;
+			display: block;
+			overflow-y: scroll;
+		}
+
+		.arrow-left-icon {
 			display: none;
-			color: $light-grey;
+			padding-top: 1em;
+			width: 2em;
 
 			@media (max-width: $split-width) {
 				display: block;
 			}
-		}
-
-		@media (max-width: $split-width) {
-			align-self: center;
-			margin-top: 0;
 		}
 
 		*:not(hr) {
@@ -37,7 +60,6 @@ $split-width: 51.875em;
 			white-space: nowrap;
 
 			@media (max-width: $split-width) {
-				text-align: center;
 				width: 100%;
 			}
 		}
@@ -52,7 +74,9 @@ $split-width: 51.875em;
 		}
 
 		a {
-			color: darken($light-grey, 25%);
+			&:not(.colored-link) {
+				color: darken($light-grey, 25%);
+			}
 
 			&:hover {
 				color: $orange;
@@ -70,7 +94,7 @@ $split-width: 51.875em;
 		min-width: 0;
 
 		@media (max-width: $split-width) {
-			padding-bottom: 0;
+			padding: 0 5% 3em;
 		}
 	
 		.title {
