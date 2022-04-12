@@ -3,8 +3,18 @@
 	{{- partial "head.html" . -}}
 	<body>
 		{{- partial "header.html" . -}}
-		<div class="four-o-four">
-			<p>The page you're looking for couldn't be found.</p>
+		<div class="docs">
+			<script src="/js/mobile-menu.js"></script>
+
+			<div class="show-menu">
+				<a href="javascript:void(0)">
+					{{- partial "svg/unordered-list.svg" . -}}
+				</a>
+			</div>
+			{{- partial "docs-index.html" . -}}
+			<div class="four-o-four">
+				<p>The page you're looking for couldn't be found.</p>
+			</div>
 		</div>
 		{{- partial "footer.html" . -}}
 	</body>
