@@ -27,12 +27,13 @@ $split-width: 51.875em;
 
 	.docs-index {
 		margin-top: 3em;
-		padding: 0 0.75em;
+		padding: 0 3em;
 		z-index: 3;
 
 		@media (max-width: $split-width) {
 			background-color: darken(white, 2%);
 			margin-top: 0;
+			padding: 0 0.75em;
 			position: absolute;
 			left: -100vh;
 			transition-property: left;
