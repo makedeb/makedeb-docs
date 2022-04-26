@@ -10,6 +10,11 @@ If you have something that you or someone else needs packaged, or you just want 
 
 To create a new package, follow the guide for [uploading packages to the MPR](/using-the-mpr/uploading-packages).
 
+## Translating
+If any of makedeb's products aren't currently in your native language, you can contribute translations so that they can be so.
+
+Translating is done on makedeb's [Weblate instance](https://weblate.{{< makedeb_url >}}). Current projects available to translate can be found under the [`makedeb` project](https://weblate.{{< makedeb_url >}}/projects/makedeb/).
+
 ## Contribute code
 We're always looking for more contributors to the codebases for makedeb's projects! There's always some bugs that need fixed, and if you're feeling extra adventurous you may even get some new features integrated, led by you!
 
