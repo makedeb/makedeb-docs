@@ -29,14 +29,4 @@ makedeb has a variety of people looking over the entire project, who collectivel
 			<p><strong>Email:</strong> leo@craftcat.dev</p>
 		</div>
 	</div>
-	<div class="dev">
-		<div class="img">
-			<img src="/media/zocker-160.png">
-		</div>
-		<div class="info">
-			<h3>zocker_160</h3>
-			<p><strong>Roles:</strong> MPR Trusted User</p>
-			<p><strong>Email:</strong> zocker1600@posteo.net</p>
-		</div>
-	</div>
 </div>
