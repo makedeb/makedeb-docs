@@ -15,7 +15,7 @@ makedeb has a variety of people looking over the entire project, who collectivel
 		</div>
 		<div class="info">
 			<h3>Hunter Wittenborn</h3>
-			<p><strong>Roles:</strong> makedeb Creator, makedeb Team, MPR Trusted User</p>
+			<p><strong>Roles:</strong> makedeb Creator, makedeb Team, MPR Trusted User, Prebuilt-MPR Maintainer</p>
 			<p><strong>Email:</strong> hunter@hunterwittenborn.com</p>
 		</div>
 	</div>
