@@ -12,13 +12,10 @@ local buildAndPublish() = {
         image: "proget.hunterwittenborn.com/docker/makedeb/makedeb:ubuntu-focal",
         volumes: [{name: "deploy-dir", path: "/var/www/docs.makedeb.org"}],
         commands: [
+            "curl -q \"https://proget.$${hw_url}/debian-feeds/prebuilt-mpr.pub\" | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null",
+            "echo \"deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg]\" https://proget.$${hw_url} prebuilt-mpr focal | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list",
             "sudo apt-get update",
-            "sudo apt-get install git gcc g++ -y",
-            "sudo chown 'makedeb:makedeb' ./ -R",
-            "git clone \"https://$${mpr_url}/golang-go\"",
-            "git clone \"https://$${mpr_url}/hugo\"",
-            "cd golang-go/; makedeb -si --no-confirm; cd ../",
-            "cd hugo/; makedeb -di --no-confirm; cd ../",
+            "sudo apt-get install hugo -y",
             "find /var/www/docs.makedeb.org/ -mindepth 1 -maxdepth 1 -exec sudo rm -rf '{}' +",
             "sudo hugo -d /var/www/docs.makedeb.org"
         ]
