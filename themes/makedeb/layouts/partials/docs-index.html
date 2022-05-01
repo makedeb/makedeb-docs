@@ -3,11 +3,11 @@
 		{{- partial "svg/arrow-left.svg" . -}}
 	</a>
 
-	{{ $curpage := .Page.Title }}
+	{{ $curpage := .Page.Permalink }}
 	{{ range .Site.Sections }}
 		<h2>{{ .Title }}</h2>
 		{{ range .Pages }}
-			{{ if eq $curpage .Title }}
+			{{ if eq $curpage .Permalink }}
 				<a class="colored-link" href="{{ .RelPermalink }}">{{ .Title }}</a>
 			{{ else }}
 				<a href="{{ .RelPermalink }}">{{ .Title }}</a>
