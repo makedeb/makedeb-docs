@@ -48,7 +48,7 @@ git clone "ssh://mpr@mpr.{{< makedeb_url >}}/pkgname.git"
 Lastly, generate the SRCINFO file, then commit and push the changed files:
 
 ```sh
-makedeb --printsrcinfo | tee .SRCINFO
+makedeb --print-srcinfo | tee .SRCINFO
 git add PKGBUILD .SRCINFO
 git commit -m "A very creative commit message"
 git push
