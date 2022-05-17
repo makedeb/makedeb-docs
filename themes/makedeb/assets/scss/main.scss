@@ -114,33 +114,48 @@ pre {
 	}
 }
 
-.code-block {
+.code-block {    
         position: relative;
  
         .clipboard-icon, .check-icon {
                 position: absolute;
                 color: darken($light-grey, 28%);
-		background-color: lighten($light-grey, 5%);
                 right: 0;
                 top: 0.3125em; // 5px divided by 16.
-		padding: 0 0.3125em;
+                padding: 0 0.3125em;
                 transition-property: color;
                 transition-duration: 0.2s;
                 z-index: 2;
         }
+
+        .clipboard-icons {
+                visibility: hidden;
+                opacity: 0;
+                transition-property: visibility opacity;
+                transition-duration: 0.2s;
+        }
+
+        &:hover {
+                .clipboard-icons {
+                        visibility: visible;
+                        opacity: 1;
+                }
+        }
     
         .clipboard-icon {
                 color: darken($light-grey, 28%);
-
+                background-color: lighten($light-grey, 5%);
+ 
                 &:hover {
                         color: $orange;
                         cursor: pointer;
                 }
         }
-
+    
         .check-icon {
                 display: none;
                 color: #40a85c;
+                background-color: lighten($light-grey, 5%);
         }
 }
 
