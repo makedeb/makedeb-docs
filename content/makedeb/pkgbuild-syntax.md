@@ -4,7 +4,7 @@ draft: false
 weight: 1
 ---
 
-makedeb creates packages via the PKGBUILD package format.
+makedeb creates packages via the PKGBUILD package format. This is heavily influenced by the [PKGBUILD format on Arch Linux](https://wiki.archlinux.org/title/PKGBUILD), with tweaks and additions to better fit into the packaging ecosystem of Debian and Ubuntu.
 
 PKGBUILDs are just Bash scripts that define variables and functions that tell makedeb how to build a package.
 
