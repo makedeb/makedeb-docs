@@ -11,25 +11,11 @@ These instructions are also applicable to distributions based on Debian and Ubun
 {{< /notice >}}
 
 ## Repository Configuration
-
-First, add the signing key:
-
-```sh
-wget -qO - 'https://proget.{{< hw_url >}}/debian-feeds/makedeb.pub' | \
-gpg --dearmor | \
-sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg &> /dev/null
-```
-
-Next, add the repository information to your system:
+To add makedeb's APT repository to your system, run the following:
 
 ```sh
-echo 'deb [signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.{{< hw_url >}}/ makedeb main' | \
-sudo tee /etc/apt/sources.list.d/makedeb.list
-```
-
-Lastly, update the repository cache on your system:
-
-```sh
+wget -qO - 'https://proget.{{< hw_url >}}/debian-feeds/makedeb.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/makedeb-archive-keyring.gpg 1> /dev/null
+echo 'deb [signed-by=/usr/share/keyrings/makedeb-archive-keyring.gpg arch=all] https://proget.{{< hw_url >}}/ makedeb main' | sudo tee /etc/apt/sources.list.d/makedeb.list
 sudo apt update
 ```
 
