@@ -14,19 +14,19 @@ Images can be downloaded from the following:
 
 {{< toggle-item class="Stable" show=1 >}}
 ```sh
-proget.{{< hw_url >}}/docker/makedeb/makedeb
+proget.{{< makedeb_url >}}/docker/makedeb/makedeb
 ```
 {{< /toggle-item >}}
 
 {{< toggle-item class="Beta" >}}
 ```sh
-proget.{{< hw_url >}}/docker/makedeb/makedeb-beta
+proget.{{< makedeb_url >}}/docker/makedeb/makedeb-beta
 ```
 {{< /toggle-item >}}
 
 {{< toggle-item class="Alpha" >}}
 ```sh
-proget.{{< hw_url >}}/docker/makedeb/makedeb-alpha
+proget.{{< makedeb_url >}}/docker/makedeb/makedeb-alpha
 ```
 {{< /toggle-item >}}
 
@@ -52,5 +52,5 @@ Images are published for [all supported LTS releases of Ubuntu](https://wiki.ubu
 For example, to pull the beta image with the `ubuntu-bionic` tag, pull the following:
 
 ```
-proget.{{< hw_url >}}/docker/makedeb/makedeb-beta:ubuntu-bionic
+proget.{{< makedeb_url >}}/docker/makedeb/makedeb-beta:ubuntu-bionic
 ```

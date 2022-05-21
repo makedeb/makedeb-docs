@@ -17,13 +17,13 @@ If you are on a different distribution/release, you can substitute the `$(lsb_re
 Run the following to set up the APT repository on your system:
 
 ```sh
-curl -q 'https://proget.{{< hw_url >}}/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
-echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.{{< hw_url >}} prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
+curl -q 'https://proget.{{< makedeb_url >}}/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
+echo "deb [signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.{{< makedeb_url >}} prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
 sudo apt update
 ```
 
 You can then proceed with installing packages from the Prebuilt-MPR.
 
 {{< notice "warning" >}}
-Not all packages on the MPR are available through the Prebuilt-MPR. You can get a current list of available packages at <https://proget.hunterwittenborn.com/feeds/prebuilt-mpr>.
+Not all packages on the MPR are available through the Prebuilt-MPR. You can get a current list of available packages at <https://github.com/makedeb/prebuilt-mpr/tree/main/packages.txt>.
 {{< /notice >}}
