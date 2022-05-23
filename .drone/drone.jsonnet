@@ -4,7 +4,7 @@ local buildAndPublish() = {
     type: "docker",
     volumes: [{name: "deploy-dir", host: {path: "/var/www/docs.makedeb.org"}}],
     trigger: {
-        branch: ["master"],
+        branch: ["main"],
         repo: ["makedeb/makedeb-docs"]
     },
     steps: [{
