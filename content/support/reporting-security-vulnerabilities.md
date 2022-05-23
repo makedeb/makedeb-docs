@@ -1,6 +1,6 @@
 ---
 title: "Reporting Security Vulnerabilities"
-weight: 3
+weight: 4
 ---
 
 If you need to report a security vulnerability in one of makedeb's products, please send an email to <security@makedeb.org>, and a team member will contact you back within a week letting you know the status of your report.
