@@ -3,6 +3,9 @@ title: "Obtaining Support"
 draft: false
 weight: 1
 ---
+{{< notice "warning" >}}
+If you need to report a security vulnerability in one of makedeb's products, please see [Reporting Security Vulnerabilities](/support/reporting-security-vulnerabilities).
+{{< /notice >}}
 
 makedeb uses [Matrix](https://matrix.org) as its primary method for communication and support. We also have a bridge for some rooms to Discord if you prefer to use that platform.
 
