@@ -82,8 +82,11 @@ $split-width: 51.875em;
 			&:hover {
 				color: $orange;
 			}
-		}
 
+			&:last-of-type {
+				padding-bottom: 1.4em;
+			}
+		}
 	}
 	 
 	.post {
