@@ -11,5 +11,4 @@ In your email, please include the following information:
 - A description of the vulnerability
 - Steps to reproduce the vulnerability
 
-If you'd like to encrypt your email with GPG, you can use the key at <https://{{< makedeb_url >}}/security.pgp>, which should be signed by `makedeb Security Team <security@makedeb.org>`.  
-
+If you'd like to encrypt your email with GPG, you can use the key at <https://{{< makedeb_url >}}/security.pgp>, which should be signed by `makedeb Project (Security Email Key) <security@makedeb.org>`.  
