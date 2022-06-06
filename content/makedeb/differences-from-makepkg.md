@@ -28,7 +28,7 @@ arch=('amd64')
 In makepkg, backup entries are specified with no leading forward slash:
 
 ```sh
-backup=('etc/pkgname.conf`)
+backup=('etc/pkgname.conf')
 ```
 
 makedeb on the other hand requires all entries to start with a forward slash instead:
