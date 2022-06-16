@@ -1,7 +1,7 @@
 ---
 title: "makedeb Team"
 draft: false
-weight: 2
+weight: 3
 ---
 
 makedeb has a variety of people looking over the entire project, who collectively do things such as contribute code, look over the MPR, and help out in support rooms.

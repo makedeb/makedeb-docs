@@ -1,6 +1,6 @@
 ---
 title: "Ways to Support makedeb"
-weight: 3
+weight: 4
 ---
 
 There's various ways you can contribute to the makedeb project! There's always some work that needs done, and any form of help you can provide is greatly appreciated.
