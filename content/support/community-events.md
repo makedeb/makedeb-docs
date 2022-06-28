@@ -15,4 +15,5 @@ makedeb has an official Minecraft server for the makedeb community to engage in.
 Currently, the following plugins are installed:
 - [ViaBackwards](https://github.com/ViaVersion/ViaBackwards)
 - [ViaVersion](https://github.com/ViaVersion/ViaVersion)
+- [ViaRewind](https://github.com/ViaVersion/ViaRewind)
 {{< /notice >}}
