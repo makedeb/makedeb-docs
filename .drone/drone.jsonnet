@@ -17,7 +17,7 @@ local buildAndPublish() = {
             "sudo apt-get update",
             "sudo apt-get install hugo -y",
             "find /var/www/docs.makedeb.org/ -mindepth 1 -maxdepth 1 -exec sudo rm -rf '{}' +",
-            "sudo hugo -d /var/www/docs.makedeb.org"
+            "sudo hugo -d /var/www/docs.makedeb.org --minify"
         ]
     }]
 };
