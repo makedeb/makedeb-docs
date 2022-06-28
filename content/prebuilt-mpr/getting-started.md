@@ -7,10 +7,15 @@ weight: 2
 The Prebuilt-MPR currently supports and publishes packages for the following distributions:
 
 - Ubuntu 20.04
+- Ubuntu 22.04
 - Debian 11
 
 {{< notice "note" >}}
-If you are on a different distribution/release, you can substitute the `$(lsb_release -cs)` command below with either `focal` or `bullseye` for Ubuntu 20.04 and Debian 11 respectively. Note that you may get broken packages though.
+While the Prebuilt-MPR supports the above distributions, this doesn't necessarily mean all packages will be available for all listed distributions. [The MPR itself only supports the latest Ubuntu LTS](/using-the-mpr/support-policy), and not all packages are thus guaranteed to be able to be built.
+{{< /notice >}}
+
+{{< notice "note" >}}
+If you are on a different distribution/release, you can substitute the `$(lsb_release -cs)` command below with either `focal`, `jammy`, or `bullseye` for Ubuntu 20.04, Ubuntu 22.04, and Debian 11 respectively. Note that you may get broken packages though.
 {{< /notice >}}
 
 ## Setting up the repository
