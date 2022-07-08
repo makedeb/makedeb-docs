@@ -36,3 +36,14 @@ makedeb on the other hand requires all entries to start with a forward slash ins
 ```sh
 backup=('/etc/pkgname.conf')
 ```
+
+### VCS support
+makedeb and makepkg both support specifying version control system sources like such:
+
+```sh
+source=('git+https://github.com/makedeb/makedeb')
+```
+
+This clones the `https://github.com/makedeb/makedeb` repository with the `git` VCS client.
+
+The area in which makedeb and makepkg differ is that makedeb only supports `git` and `svn` for the VCS client, while makepkg supports some additional ones. There was a period where makedeb supported the same ones makepkg did, but a few were dropped due to [lack of popularity](https://survey.stackoverflow.co/2022/#version-control-version-control-system) and the maintenance cost of supporting such systems.
