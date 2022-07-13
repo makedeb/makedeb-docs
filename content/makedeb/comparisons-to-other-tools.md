@@ -4,7 +4,11 @@ draft: false
 weight: 4
 ---
 
-The sections below outline some major differences makedeb has towards other tools, which may aid in helping you decide if makedeb is the tool that's right for you or your team.
+The sections below outline some major differences makedeb has with other tools, which may aid in helping you decide if makedeb is the tool that's right for you or your team.
+
+{{< notice "note" >}}
+If information on this page appears to be out of date, please [submit an issue](https://{{< github_url >}}/makedeb/makedeb-docs/issues).
+{{< /notice >}}
 
 ## Standard Debian build tools
 This includes tools like `debuild` and `dpkg-deb`; these are the tools that are commonly used to build packages for Debian and Ubuntu based distributions.
@@ -16,7 +20,7 @@ The `rules` file used in Debian packaging also uses Makefile syntax, which isn't
 
 makedeb's [`PKGBUILD` syntax](/makedeb/pkgbuild-syntax) alleviates both of these issues, with it putting most packaging information into a single file, whilst also being simple to write and look at.
 
-There's a few things that standard Debian build tools can do that makedeb can't, though most of these use cases are fairly uncommon, and makedeb will work just fine for pretty much anything you need it to do.
+There's a few things that standard Debian build tools can do that makedeb can't, though most of these use cases are fairly uncommon, and makedeb will work just fine for most things you need it to do.
 
 ## Pacstall
 [Pacstall](https://pacstall.dev) is a package manager that function as an AUR-like platform for Ubuntu systems.
