@@ -1,5 +1,5 @@
 ---
-title: "Comparisons to other tools"
+title: "Comparisons to Other Tools"
 draft: false
 weight: 4
 ---
