@@ -41,4 +41,4 @@ Pacstall has both the build tool and package repository management in a single p
 makedeb also has the [Prebuilt-MPR](/prebuilt-mpr), which provides a repository of popular MPR packages installable directly via `apt` without makedeb even being installed, providing a way for users to install extra packages without having to learn another package management system.
 
 ### Available packages
-makedeb's main package repository (the aformetioned [MPR](/using-the-mpr)) includes more packages than [Pacstall's main package repository](https://github.com/pacstall/pacstall-programs), meaning there's a better chance software you want will be available with makedeb than with Pacstall.
+makedeb's main package repository (the aformetioned [MPR](/using-the-mpr)) [includes more packages](https://mpr.{{< makedeb_url >}}/about) than [Pacstall's main package repository](https://github.com/pacstall/pacstall-programs) [[1](https://github.com/pacstall/pacstall-programs/blob/master/packagelist)], meaning there's a better chance software you want will be available with makedeb than with Pacstall.
