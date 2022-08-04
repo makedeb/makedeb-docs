@@ -30,8 +30,8 @@ Outside of that listed above:
 - **Optional** means that the feature isn't enabled by default, and requires a CLI argument or config option to be enabled.
 
 ## Helpers
-| Name    | MPR Package                                                 | Homepage                                     | Programming Language | Search | Clone   | Install | Update | APT-Install | APT-Update | Git-Update | MPR-Dependencies |
-| :---    | :---------------------------------------------------------- | :------------------------------------------- | :-----               | :----- | :------ | :------ | :----- | :---------- | :--------  | :--------  | :--------------- |
-| mpr-cli | [mpr-cli](https://mpr.{{< makedeb_url >}}/packages/mpr-cli) | <https://{{< github_url >}}/makedeb/mpr-cli> | Rust                 | Yes    | Yes     | No      | No     | No          | No         | No         | No               |
-| Tap     | [tap](https://mpr.{{< makedeb_url >}}/packages/tap)         | <https://{{< github_url >}}/hwittenborn/tap> | Python               | Yes    | Partial | Yes     | Yes    | Yes         | Yes        | No         | No               |
-| una     | [una-bin](https://mpr.{{< makedeb_url >}}/packages/una-bin) | <https://{{< github_url >}}/AFK-OS/una>      | Bash                 | Yes    | Yes     | Yes     | Yes    | Yes         | Yes        | Yes        | Yes              |
+| Name | MPR Package                                                 | Homepage                                     | Programming Language | Search | Clone   | Install | Update | APT-Install | APT-Update | Git-Update | MPR-Dependencies |
+| :--- | :---------------------------------------------------------- | :------------------------------------------- | :-----               | :----- | :------ | :------ | :----- | :---------- | :--------  | :--------  | :--------------- |
+| Mist | [mist](https://mpr.{{< makedeb_url >}}/packages/mist)       | <https://{{< github_url >}}/makedeb/mist>    | Rust                 | Yes    | Yes     | No      | No     | No          | No         | No         | No               |
+| Tap  | [tap](https://mpr.{{< makedeb_url >}}/packages/tap)         | <https://{{< github_url >}}/hwittenborn/tap> | Python               | Yes    | Partial | Yes     | Yes    | Yes         | Yes        | No         | No               |
+| una  | [una-bin](https://mpr.{{< makedeb_url >}}/packages/una-bin) | <https://{{< github_url >}}/AFK-OS/una>      | Bash                 | Yes    | Yes     | Yes     | Yes    | Yes         | Yes        | Yes        | Yes              |
