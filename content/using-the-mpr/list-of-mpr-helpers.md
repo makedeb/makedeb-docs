@@ -32,6 +32,6 @@ Outside of that listed above:
 ## Helpers
 | Name    | MPR Package                                                 | Homepage                                     | Programming Language | Search | Clone   | Install | Update | APT-Install | APT-Update | Git-Update | MPR-Dependencies |
 | :---    | :---------------------------------------------------------- | :------------------------------------------- | :-----               | :----- | :------ | :------ | :----- | :---------- | :--------  | :--------  | :--------------- |
-| mist    | [mist](https://mpr.{{< makedeb_url >}}/packages/mist)       | <https://{{< github_url >}}/makedeb/mist>    | Rust                 | Yes    | Yes     | No      | No     | No          | No         | No         | No               |
+| mari    | [mari](https://mpr.{{< makedeb_url >}}/packages/mari)       | <https://{{< github_url >}}/makedeb/mari>    | Rust                 | Yes    | Yes     | No      | No     | No          | No         | No         | No               |
 | Tap     | [tap](https://mpr.{{< makedeb_url >}}/packages/tap)         | <https://{{< github_url >}}/hwittenborn/tap> | Python               | Yes    | Partial | Yes     | Yes    | Yes         | Yes        | No         | No               |
 | una     | [una-bin](https://mpr.{{< makedeb_url >}}/packages/una-bin) | <https://{{< github_url >}}/AFK-OS/una>      | Bash                 | Yes    | Yes     | Yes     | Yes    | Yes         | Yes        | Yes        | Yes              |
