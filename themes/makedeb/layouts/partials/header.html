@@ -1,15 +1,34 @@
 <header>
+	{{ if hasPrefix .RelPermalink "/news" }}
+	<a class="makedeb-brand" href="/news">
+	{{ else }}
 	<a class="makedeb-brand" href="/">
-		<img class="makedeb-logo" src="/media/makedeb-logo.png" alt="makedeb logo">
+	{{ end }}
+		<img class="makedeb-logo" src="/media/makedeb-logo.svg" alt="makedeb logo">
 		<p class="makedeb-logo-text">makedeb</p>
 	</a>
 	
 	<div class="links">
-		<a href="https://{{ .Site.Params.makedeb_url }}">Homepage</a>
-		<p>Docs</p>
+		{{ if eq .RelPermalink "/" }}
+		<p>Homepage</p>
+		{{ else }}
+		<a href="/">Homepage</a>
+		{{ end }}
+
+		<a href="https://docs.{{ .Site.Params.makedeb_url }}">Docs</a>
 		<a href="https://mpr.{{ .Site.Params.hw_url }}">MPR</a>
-		<a href="https://{{ .Site.Params.makedeb_url }}/news">News</a>
-		<a href="https://{{ .Site.Params.makedeb_url }}/donate">Donate</a>
+
+		{{ if eq .RelPermalink "/news/" }}
+		<p>News</p>
+		{{ else }}
+		<a href="/news">News</a>
+		{{ end }}
+
+		{{ if eq .RelPermalink "/donate/" }}
+		<p>Donate</p>
+		{{ else }}
+		<a href="/donate">Donate</a>
+		{{ end }}
 	</div>
 </header>
 <hr class="header-hr">
