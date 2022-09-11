@@ -1,6 +1,6 @@
 @import "variables";
 
-$header-max-width: 550px;
+$header-max-width: 640px;
 
 header {
 	height: 100%;
@@ -44,13 +44,14 @@ header {
 		flex-direction: row;
 		padding-right: 0.75em;
 		flex-wrap: wrap;
+		width: max-content;
 
 		p, a {
-                        font-size: 1.15em;
-                        margin: 0.3em 0.75em;
-                        display: inline;
-                        padding: 0;
-                        line-height: 1em;
+			font-size: 1.15em;
+			margin: 0.3em 0.75em;
+			display: inline;
+			padding: 0;
+			line-height: 1em;
 		}
 
 		p {
