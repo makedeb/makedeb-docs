@@ -99,7 +99,8 @@ table {
 }
 
 // Styling for code blocks.
-code { background-color: lighten($light-grey, 5%);
+code {
+	background-color: lighten($light-grey, 5%);
 	padding: 0.2em;
 	font-size: 85%;
 	border-radius: 0.3em;

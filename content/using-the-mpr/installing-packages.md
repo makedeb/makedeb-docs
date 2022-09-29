@@ -1,7 +1,7 @@
 ---
 title: "Installing Packages"
 draft: false
-weight: 2
+weight: 3
 ---
 
 Installing packages from the MPR is usually a straightforward process, and will typically only consist of a few steps:

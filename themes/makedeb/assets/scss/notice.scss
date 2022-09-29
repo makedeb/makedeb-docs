@@ -9,6 +9,10 @@
 		padding-top: 0 !important;
 	}
 
+	& *:last-child {
+		padding-bottom: 0 !important;
+	}
+
 	&.note {
 		border-color: $archlinux-blue;
 		background-color: lighten($archlinux-blue, 51%);
