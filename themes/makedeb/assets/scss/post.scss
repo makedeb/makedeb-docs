@@ -66,7 +66,7 @@ $split-width: 51.875em;
 		}
 
 		h2 {
-			padding-top: 0.6em;
+			margin-top: 0.6em;
 			text-decoration: underline;
 		}
 
@@ -90,7 +90,7 @@ $split-width: 51.875em;
 	}
 	 
 	.post {
-		padding: 3em 5%;
+		margin: 3em 5%;
 		color: $dark-grey;
 		max-width: 50em;
 		// So apparently flexbox items have a default value of 'min-size: auto', which is causing overflows when the document post is on a separate line from the index. Don't know why that causes overflow issues, but this fixes it.
@@ -98,7 +98,7 @@ $split-width: 51.875em;
 		min-width: 0;
 
 		@media (max-width: $split-width) {
-			padding: 0 5% 3em;
+			margin: 0 5% 3em;
 		}
 	
 		.title {
@@ -116,9 +116,13 @@ $split-width: 51.875em;
 			margin-left: auto;
 			margin-right: auto;
 
+			& > *:first-child {
+				margin-top: 1em;
+			}
+
 			h1, h2, h3, h4 {
 				margin-top: 0.7em;
-				font-weight: 900;
+				font-weight: normal;
 			}
 
 			h2 {
@@ -139,11 +143,11 @@ $split-width: 51.875em;
 			}
 
 			p {
-				padding: 0.5em 0;
+				margin: 0.5em 0;
 			}
 		
 			ul {
-				padding: 0.5em 0;
+				margin: 0.5em 0;
 			}
 
 			.heading {

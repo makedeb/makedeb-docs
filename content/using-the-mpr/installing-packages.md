@@ -26,7 +26,7 @@ cd pkgname/
 ```
 
 {{< notice "warning" >}}
-Make sure to carefully check all build files for potentially malicious code before building (common files include `preinst`, `postinst`, `prerm` and `postrm` scripts, as well as the PKGBUILD itself). If you're not sure if a package is malicious, do not build the package and ask for help in makedeb's support rooms`.
+Make sure to carefully check all build files for potentially malicious code before building (common files include `preinst`, `postinst`, `prerm` and `postrm` scripts, as well as the PKGBUILD itself). If you're not sure if a package is malicious, do not build the package and ask for help in makedeb's support rooms.
 {{< /notice >}}
 
 Next you need to actually create the flag by running `makedeb`. Some common arguments that you may want to pass include:
