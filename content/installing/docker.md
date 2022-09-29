@@ -1,7 +1,7 @@
 ---
 title: "Docker"
 draft: false
-weight: 4
+weight: 5
 ---
 
 Docker images are published nightly for all releases of makedeb. The images come with minimal packages, containing only the bare necessities needed to run makedeb.

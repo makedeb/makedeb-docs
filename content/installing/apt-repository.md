@@ -1,7 +1,7 @@
 ---
 title: "APT Repository"
 draft: false
-weight: 2
+weight: 3
 ---
 
 The primary method for installation of makedeb is through the use of makedeb's APT repository.
@@ -10,7 +10,7 @@ The primary method for installation of makedeb is through the use of makedeb's A
 These instructions are also applicable to distributions based on Debian and Ubuntu, such as Pop!\_OS, Linux Mint, and the various [Ubuntu flavors](https://ubuntu.com/download/flavours).
 {{< /notice >}}
 
-## Repository Configuration
+## Repository configuration
 To add makedeb's APT repository to your system, run the following:
 
 ```sh
