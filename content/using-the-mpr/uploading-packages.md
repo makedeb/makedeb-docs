@@ -1,7 +1,7 @@
 ---
 title: "Uploading Packages"
 draft: false
-weight: 3
+weight: 4
 ---
 
 To upload PKGBUILDs to the MPR, you must first already have an [SSH key pair](https://wiki.archlinux.org/title/SSH_keys) on your local system.
