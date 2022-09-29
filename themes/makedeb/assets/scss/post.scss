@@ -116,14 +116,21 @@ $split-width: 51.875em;
 			margin-left: auto;
 			margin-right: auto;
 
+			h1, h2, h3, h4 {
+				margin-top: 0.7em;
+				font-weight: 900;
+			}
+
 			h2 {
 				font-size: 2em;
-				margin-top: 0.7em;
 			}
 
 			h3 {
 				font-size: 1.6em;
-				margin-top: 0.7em;
+			}
+
+			h4 {
+				font-size: 1.3em;
 			}
 
 			p:not(li p), li {
@@ -132,11 +139,11 @@ $split-width: 51.875em;
 			}
 
 			p {
-				padding-top: 1em;
+				padding: 0.5em 0;
 			}
 		
 			ul {
-				padding-top: 1em;
+				padding: 0.5em 0;
 			}
 
 			.heading {
