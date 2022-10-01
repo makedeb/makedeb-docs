@@ -9,26 +9,11 @@
 	</a>
 	
 	<div class="links">
-		{{ if eq .RelPermalink "/" }}
-		<p>Homepage</p>
-		{{ else }}
-		<a href="/">Homepage</a>
-		{{ end }}
-
-		<a href="https://docs.{{ .Site.Params.makedeb_url }}">Docs</a>
+		<a href="https://{{ .Site.Params.makedeb_url }}">Homepage</a>
+		<p>Docs</p>
 		<a href="https://mpr.{{ .Site.Params.hw_url }}">MPR</a>
-
-		{{ if eq .RelPermalink "/news/" }}
-		<p>News</p>
-		{{ else }}
-		<a href="/news">News</a>
-		{{ end }}
-
-		{{ if eq .RelPermalink "/donate/" }}
-		<p>Donate</p>
-		{{ else }}
-		<a href="/donate">Donate</a>
-		{{ end }}
+		<a href="https://{{ .Site.Params.makedeb_url }}/news">News</a>
+		<a href="https://{{ .Site.Params.makedeb_url }}/donate">Donate</a>
 	</div>
 </header>
 <hr class="header-hr">

@@ -5,8 +5,8 @@
 	display: flex;
 
 	p {
-		padding-top: 0em; // Global styles set a top padding on p elements.
 		padding: 0 0.3em;
+		margin-bottom: 0 !important;
 		border-bottom: 0.15em solid $light-grey;
 
 		&.active {

@@ -66,7 +66,7 @@ $split-width: 51.875em;
 		}
 
 		h2 {
-			padding-top: 0.6em;
+			margin-top: 0.6em;
 			text-decoration: underline;
 		}
 
@@ -90,19 +90,23 @@ $split-width: 51.875em;
 	}
 	 
 	.post {
-		padding: 3em 5%;
+		margin: 3em 1em;
 		color: $dark-grey;
-		max-width: 50em;
+		max-width: 40em;
 		// So apparently flexbox items have a default value of 'min-size: auto', which is causing overflows when the document post is on a separate line from the index. Don't know why that causes overflow issues, but this fixes it.
 		// See https://moduscreate.com/blog/how-to-fix-overflow-issues-in-css-flex-layouts/.
 		min-width: 0;
 
 		@media (max-width: $split-width) {
-			padding: 0 5% 3em;
+			margin: 0 5% 3em;
 		}
 	
 		.title {
-			font-size: 2.8em;
+			font-size: 2.2em;
+		}
+
+		h1, h2, h3, h4 {
+			font-weight: normal;
 		}
 
 		hr {
@@ -116,34 +120,37 @@ $split-width: 51.875em;
 			margin-left: auto;
 			margin-right: auto;
 
-			h1, h2, h3, h4 {
+			& > *:first-child {
+				margin-top: 1em;
+			}
+
+			h2, h3, h4 {
 				margin-top: 0.7em;
-				font-weight: 900;
 			}
 
 			h2 {
-				font-size: 2em;
+				font-size: 1.8em;
 			}
 
 			h3 {
-				font-size: 1.6em;
+				font-size: 1.4em;
 			}
 
 			h4 {
-				font-size: 1.3em;
+				font-size: 1.1em;
 			}
 
 			p:not(li p), li {
-				font-size: 1.2em;
+				font-size: 1.1em;
 				line-height: 1.3em;
 			}
 
 			p {
-				padding: 0.5em 0;
+				margin: 0.5em 0;
 			}
 		
 			ul {
-				padding: 0.5em 0;
+				margin: 0.5em 0;
 			}
 
 			.heading {

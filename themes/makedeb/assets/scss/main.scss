@@ -16,6 +16,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 // Main CSS, shared across entire website.
+p, a, h1, h2, h3, h4, h5, h6, ul, li, td {
+        font-weight: lighter;
+}
+
 body {
 	font-family: "Ubuntu", sans-serif;
 }
@@ -35,7 +39,7 @@ em {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 ol, ul {
@@ -45,7 +49,7 @@ ol, ul {
 li {
 	margin-left: 1em;
 	display: list-item;
-	padding: 0.2em 0;
+	padding: 0.1em 0;
 }
 
 // Styling for tables.
@@ -61,7 +65,7 @@ table {
 
 	thead tr {
 		th {
-			font-weight: 700;
+			font-weight: normal;
 			padding: $table-padding;
 			border-bottom: 0.2em solid darken($light-grey, 10%);
 			background-color: lighten($light-grey, 8%);
@@ -97,7 +101,7 @@ table {
 // Styling for code blocks.
 code {
 	background-color: lighten($light-grey, 5%);
-	padding: 0.2em;
+	padding: 0.1em 0.2em;
 	font-size: 85%;
 	border-radius: 0.3em;
 	font-family: "Ubuntu Mono", monospace;

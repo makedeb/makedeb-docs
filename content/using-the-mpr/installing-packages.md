@@ -11,6 +11,17 @@ Installing packages from the MPR is usually a straightforward process, and will 
 3. Build the package with `makedeb`, which will perform all the needed steps to properly package the application.
 4. Install the package with `apt`.
 
+{{< notice "note" >}}
+## Installing with Mist
+If you have [Mist](/using-the-mpr/mist-the-mpr-cli) installed, you can just run the following to install a package from the MPR (replacing `pkgname` with the name of the MPR package):
+
+```sh
+mist install pkgname
+```
+
+Otherwise, continue with the instructions below.
+{{< /notice >}}
+
 ## Acquiring build files
 To get all needed build files, just run the following command (replacing `pkgname` with the name of the MPR package):
 
@@ -26,7 +37,7 @@ cd pkgname/
 ```
 
 {{< notice "warning" >}}
-Make sure to carefully check all build files for potentially malicious code before building (common files include `preinst`, `postinst`, `prerm` and `postrm` scripts, as well as the PKGBUILD itself). If you're not sure if a package is malicious, do not build the package and ask for help in makedeb's support rooms`.
+Make sure to carefully check all build files for potentially malicious code before building (common files include `preinst`, `postinst`, `prerm` and `postrm` scripts, as well as the PKGBUILD itself). If you're not sure if a package is malicious, do not build the package and ask for help in makedeb's support rooms.
 {{< /notice >}}
 
 Next you need to actually create the flag by running `makedeb`. Some common arguments that you may want to pass include:
