@@ -105,6 +105,7 @@ code {
 	font-size: 85%;
 	border-radius: 0.3em;
 	font-family: "Ubuntu Mono", monospace;
+	line-height: 1.3em;
 }
 
 pre {
@@ -114,7 +115,6 @@ pre {
 	overflow: auto;
 
 	code {
-		line-height: 1.6em;
 		font-size: 100%;
 	}
 }
