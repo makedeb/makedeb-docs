@@ -57,7 +57,10 @@ footer {
 	}
 
 	.links {
+		text-align: center;
+
 		a {
+			line-height: 1.3em;
 			color: $light-grey;
 			margin-right: 1em;
 			transition-property: color;
