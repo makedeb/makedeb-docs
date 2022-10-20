@@ -27,11 +27,6 @@ Due to packaging requirements, you should avoid makedeb if you're wanting to get
 ## Pacstall
 [Pacstall](https://pacstall.dev) is a package manager that function as an AUR-like platform for Ubuntu systems.
 
-### Installing packages
-The biggest difference between Pacstall and makedeb is the method for installing packages. Pacstall uses a custom installation method using [`stow`](https://www.gnu.org/software/stow/manual/stow.html), while makedeb uses the native `.deb` package format, which results in makedeb having better system integration than Pacstall.
-
-Pacstall packages are also designed to only be installed on the system they're built on. Since makedeb uses the `.deb` package format though, once you build a package, it can be installed on the system that built the package, as well as transferred to any other system and installed via `apt` like any other Debian package.
-
 ### Build file format
 Both Pacstall and makedeb use a Bash-like syntax to set up their build files. Pacstall uses a more custom format for their build files though, while makedeb uses a format that's heavily based on that of [PKGBUILDs from Arch Linux](/makedeb/pkgbuild-syntax), meaning there's less to learn and get accustomed to if you're already used to those.
 
