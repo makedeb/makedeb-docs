@@ -40,12 +40,13 @@ You **MUST** also append the image name with any of the following tags:
 
 ### Ubuntu
 {{< notice "warning" >}}
-Images are published for [all supported LTS releases of Ubuntu](https://wiki.ubuntu.com/Releases), plus `latest` and `rolling`. When LTS releases are no longer supported, they stop recieving updates in their respective makedeb Docker images and will no longer be listed here.
+Images are published for [all currently supported releases of Ubuntu](https://wiki.ubuntu.com/Releases), plus `latest` and `rolling`. When releases are no longer supported, they stop recieving updates in their respective makedeb Docker images and will no longer be listed here.
 {{< /notice >}}
 
 - `ubuntu-bionic` (built from `ubuntu:bionic`)
 - `ubuntu-focal` (built from `ubuntu:focal`)
 - `ubuntu-jammy` (built from `ubuntu:jammy`)
+- `ubuntu-kinetic` (built from `ubuntu:kinetic`)
 - `ubuntu-rolling` (built from `ubuntu:rolling`)
 - `ubuntu-latest` (built from `ubuntu:latest`)
 
