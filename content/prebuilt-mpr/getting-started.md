@@ -22,7 +22,7 @@ If you are on a different distribution/release, you can substitute the `$(lsb_re
 Run the following to set up the APT repository on your system:
 
 ```sh
-curl -q 'https://proget.{{< makedeb_url >}}/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
+wget -qO - 'https://proget.{{< makedeb_url >}}/debian-feeds/prebuilt-mpr.pub' | gpg --dearmor | sudo tee /usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg 1> /dev/null
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/prebuilt-mpr-archive-keyring.gpg] https://proget.{{< makedeb_url >}} prebuilt-mpr $(lsb_release -cs)" | sudo tee /etc/apt/sources.list.d/prebuilt-mpr.list
 sudo apt update
 ```
