@@ -1,0 +1,35 @@
+name: Deploy Website
+on:
+  push:
+    branches:
+      - 'main'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Git repository
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Setup makedeb APT repositories
+        uses: makedeb/setup-makedeb@main
+        with:
+          makedeb-repo: false
+          pbmpr-repo: true
+      - name: Install Hugo
+        run: sudo apt-get install hugo -y
+      - name: Build site
+        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./public
+      - name: Deploy site
+        uses: actions/deploy-pages@v1
