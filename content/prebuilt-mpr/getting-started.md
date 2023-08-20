@@ -4,18 +4,26 @@ draft: false
 weight: 2
 ---
 
-The Prebuilt-MPR currently supports and publishes packages for the following distributions:
+The Prebuilt-MPR currently supports and publishes packages for the following distributions and architectures:
 
-- Ubuntu 20.04
-- Ubuntu 22.04
-- Debian 11
+#### Distros
+- Ubuntu 20.04 (`focal`)
+- Ubuntu 22.04 (`jammy`)
+- Ubuntu 23.04 (`lunar`)
+- Debian 11 (`bullseye`)
+- Debian 12 (`bookworm`)
+
+#### Architectures
+- `amd64`
+- `arm64`
 
 {{< notice "note" >}}
-While the Prebuilt-MPR supports the above distributions, this doesn't necessarily mean all packages will be available for all listed distributions. [The MPR itself only supports the latest Ubuntu LTS](/using-the-mpr/support-policy), and not all packages are thus guaranteed to be able to be built.
-{{< /notice >}}
+While the Prebuilt-MPR supports the above distributions and architectures, this doesn't mean all packages will be available for all systems:
 
-{{< notice "note" >}}
-If you are on a different distribution/release, you can substitute the `$(lsb_release -cs)` command below with either `focal`, `jammy`, or `bullseye` for Ubuntu 20.04, Ubuntu 22.04, and Debian 11 respectively. Note that you may get broken packages though.
+- The MPR itself only supports the [latest Ubuntu LTS release](/using-the-mpr/support-policy), and packages are thus not guaranteed to be available on other distributions.
+- `arm64` support is currently experimental, and packages may not be available.
+
+You can see what packages are available after setting up the Prebuilt-MPR APT repository on your system.
 {{< /notice >}}
 
 ## Setting up the repository
@@ -27,8 +35,8 @@ echo "deb [arch=all,$(dpkg --print-architecture) signed-by=/usr/share/keyrings/p
 sudo apt update
 ```
 
-You can then proceed with installing packages from the Prebuilt-MPR.
-
-{{< notice "warning" >}}
-Not all packages on the MPR are available through the Prebuilt-MPR. You can get a current list of available packages at <https://github.com/makedeb/prebuilt-mpr/tree/main/packages.txt>.
+{{< notice "note" >}}
+If you're on an unsupported distribution, you can substitute the `$(lsb_release -cs)` command with any of the above distributions. Note that packages may not work though.
 {{< /notice >}}
+
+You can then proceed with installing packages from the Prebuilt-MPR.
