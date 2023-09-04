@@ -15,13 +15,13 @@ The Prebuilt-MPR currently supports and publishes packages for the following dis
 
 #### Architectures
 - `amd64`
-- `arm64`
+- `arm64` *(currently only experimentally supported)*
 
 {{< notice "note" >}}
 While the Prebuilt-MPR supports the above distributions and architectures, this doesn't mean all packages will be available for all systems:
 
 - The MPR itself only supports the [latest Ubuntu LTS release](/using-the-mpr/support-policy), and packages are thus not guaranteed to be available on other distributions.
-- `arm64` support is currently experimental, and packages may not be available.
+- As stated above, `arm64` support is currently experimental, and packages may not be available.
 
 You can see what packages are available after setting up the Prebuilt-MPR APT repository on your system.
 {{< /notice >}}
