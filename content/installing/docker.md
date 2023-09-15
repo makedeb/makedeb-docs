@@ -14,19 +14,19 @@ Images can be downloaded from the following:
 
 {{< toggle-item class="Stable" show=1 >}}
 ```sh
-proget.{{< makedeb_url >}}/docker/makedeb/makedeb
+ghcr.io/makedeb/makedeb
 ```
 {{< /toggle-item >}}
 
 {{< toggle-item class="Beta" >}}
 ```sh
-proget.{{< makedeb_url >}}/docker/makedeb/makedeb-beta
+ghcr.io/makedeb/makedeb-beta
 ```
 {{< /toggle-item >}}
 
 {{< toggle-item class="Alpha" >}}
 ```sh
-proget.{{< makedeb_url >}}/docker/makedeb/makedeb-alpha
+ghcr.io/makedeb/makedeb-alpha
 ```
 {{< /toggle-item >}}
 
@@ -53,5 +53,5 @@ Images are published for [all currently supported releases of Ubuntu](https://wi
 For example, to pull the beta image with the `ubuntu-bionic` tag, pull the following:
 
 ```
-proget.{{< makedeb_url >}}/docker/makedeb/makedeb-beta:ubuntu-bionic
+ghcr.io/makedeb/makedeb-beta:ubuntu-bionic
 ```
