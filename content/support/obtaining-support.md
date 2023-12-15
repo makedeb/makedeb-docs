@@ -11,15 +11,12 @@ makedeb uses [Matrix](https://matrix.org) as its primary method for communicatio
 
 ## Matrix Rooms
 
-All rooms are joinable via the Matrix space at [#makedeb:{{< hw_url >}}](https://matrix.to/#/#makedeb:{{< hw_url >}}).
+All rooms are joinable via the Matrix space at [#makedeb:matrix.org](https://matrix.to/#/#makedeb:matrix.org).
 
 If your client doesn't support Matrix spaces, you can join each room individually:
-- makedeb: General ([#makedeb-project:{{< hw_url >}}](https://matrix.to/#/#makedeb-project:{{< hw_url >}}))
-- makedeb: Docs ([#makedeb-docs:{{< hw_url >}}](https://matrix.to/#/#makedeb-docs:{{< hw_url >}}))
-- makedeb: Homepage ([#makedeb-homepage:{{< hw_url >}}](https://matrix.to/#/#makedeb-homepage:{{< hw_url >}}))
-- makedeb: Mist ([#makedeb-mist:{{< hw_url >}}](https://matrix.to/#/#makedeb-mist:{{< hw_url >}}))
-- makedeb: MPR ([#makedeb-mpr:{{< hw_url >}}](https://matrix.to/#/#makedeb-mpr:{{< hw_url >}}))
-- makedeb: Prebuilt-MPR ([#makedeb-prebuilt-mpr:{{< hw_url >}}](https://matrix.to/#/#makedeb-prebuilt-mpr:{{< hw_url >}}))
+- makedeb: General ([#makedeb-general:matrix.org](https://matrix.to/#/#makedeb-general:matrix.org))
+- makedeb: MPR ([#makedeb-package-repository:matrix.org](https://matrix.to/#/#makedeb-package-repository:matrix.org))
+- makedeb: Prebuilt-MPR ([#makedeb-pbmpr:matrix.org](https://matrix.to/#/#makedeb-pbmpr:matrix.org))
 
 
 ## Discord
