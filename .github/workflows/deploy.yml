@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Git repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
       - name: Setup makedeb APT repositories
         uses: makedeb/setup-makedeb@main
         with:
@@ -28,8 +28,8 @@ jobs:
       - name: Build site
         run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload site artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
       - name: Deploy site
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
