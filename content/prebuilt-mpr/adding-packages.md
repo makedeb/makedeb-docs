@@ -4,7 +4,7 @@ draft: false
 weight: 3
 ---
 
-The Prebuilt-MPR only builds and updates [a select group of packages](https://github.com/makedeb/prebuilt-mpr/blob/main/packages.txt). This is done for a few reasons:
+The Prebuilt-MPR only builds and updates [a select group of packages](https://github.com/makedeb/prebuilt-mpr/blob/main/packages.toml). This is done for a few reasons:
 
 1. So the repository doesn't get overloaded with package updates.
 2. So untrustworty, unpopular, or otherwise undesirable packages don't get a PR to get added. In the scale of hundreds of packages, this reduces the amount of PRs that need to constantly be closed greatly.
