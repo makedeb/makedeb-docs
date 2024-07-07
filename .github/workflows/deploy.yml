@@ -17,7 +17,7 @@ jobs:
           submodules: recursive
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
       - name: Setup makedeb APT repositories
         uses: makedeb/setup-makedeb@main
         with:
