@@ -4,6 +4,9 @@ draft: false
 weight: 2
 aliases: ["/using-the-mpr/list-of-mpr-helpers"]
 ---
+{{< notice "warning" >}}
+Mist has not yet reached a 1.0.0 release. Stability isn't guaranteed, and you may face issues during usage.
+{{< /notice >}}
 
 Mist is the official command-line interface for the MPR.
 
