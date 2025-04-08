@@ -9,7 +9,8 @@ The Prebuilt-MPR currently supports and publishes packages for the following dis
 #### Distros
 - Ubuntu 20.04 (`focal`)
 - Ubuntu 22.04 (`jammy`)
-- Ubuntu 23.04 (`lunar`)
+- Ubuntu 24.04 (`noble`)
+- Ubuntu 24.10 (`oracular`)
 - Debian 11 (`bullseye`)
 - Debian 12 (`bookworm`)
 
